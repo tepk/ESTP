@@ -22,7 +22,3 @@ Router.route('/abuse', function () {
 Router.route('/contacts', function () {
     this.render('contacts');
 });
-
-Router.route('/splash', function () {
-    this.render('splash');
-});
