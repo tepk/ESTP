@@ -1,6 +1,7 @@
 Template.menu.helpers({
     isConnected: function () {
-        return Meteor.connection.status().status === "connected";
+        return Meteor.connection.status().status === "connected" ||
+            Meteor.connection.status().status === "connecting";
     }
 })
 Template.menuUrl.helpers({
