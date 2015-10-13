@@ -1,0 +1,58 @@
+<head>
+    <title>Единая Служба Технической Поддержки</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+          content="Единая Служба Технической Поддержки. Мы предоставляем услуги сервисного обслуживания и технической
+          поддержки в зоне ответственности конечных пользователей, вне зависимости от провайдеров интернет и
+          кабельного телевидения."/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<template name="layout">
+    <div class="page-wrap">
+        <nav>
+            <div class="drop-cat">
+                <a class='dropdown-button btn btn-width hide-on-small-and-down' href='/#'
+                   data-activates='dropdown1'>{{isCompany}}</a>
+                <a class='dropdown-button btn-flat white-text hide-on-med-and-up show-on-small' href='/#'
+                   data-activates='dropdown1'><i
+                        class="material-icons mob-menu-icon">more_horiz</i></a>
+
+
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="/">Физ. лица</a></li>
+                    <li><a href="/organization">Юр. лица</a></li>
+                </ul>
+            </div>
+            <ul id="slide-out" class="side-nav">
+                <li>{{>layoutUrl url="/price" description="Стоимость услуг"}}</li>
+                <li>{{>layoutUrl url="/service" description="Сервисный центр"}}</li>
+                <li>{{>layoutUrl url="/abuse" description="Работа с обращениями"}}</li>
+                <li>{{>layoutUrl url="/contacts" description="Контактная информация"}}</li>
+            </ul>
+            <a data-activates="slide-out" class="button-collapse show-on-large" href="#"><i
+                    class="mdi-navigation-menu"></i></a>
+            <a href="/"><img src="/images/logo.png" class="brand-logo center"></a>
+        </nav>
+        <div id="content">
+            {{> yield}}
+        </div>
+    </div>
+    <footer class="site-footer">
+        {{>copyright}}
+    </footer>
+</template>
+
+<template name="layoutUrl">
+    {{#if isCurrentUrl url}}
+        <span>{{description}}</span>
+    {{else}}
+        <a href="{{url}}">{{description}}</a>
+    {{/if}}
+</template>

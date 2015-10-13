@@ -1,0 +1,161 @@
+@navbar-height-mobile: 84px;
+
+html {
+  height: 100%;
+}
+
+body {
+  color: #242424;
+  background: #eee;
+  overflow-y: scroll !important;
+  height: 100%;
+}
+
+/* this is sticky-footer */
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -40px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 40px;
+  color: #5288ae;
+  font-size: 0.7rem;
+  width: 100%;
+  vertical-align: bottom;
+  text-align: center;
+}
+/* end of footer */
+
+.contacts {
+  li {
+    list-style-type: none;
+    list-style-image: none;
+
+    vertical-align: central;
+  }
+
+.contact-list {
+  color: #5288ae;
+}
+}
+
+/* this must replace hover color in navigation */
+
+.button-collapse:hover {
+  color: #eee;
+}
+
+.drop-cat:hover {
+  color: #eee;
+}
+
+/* end of hover replace */
+
+h1 {
+  font-size: 1.7em;
+  color: #5288ae;
+  margin-left: -30px;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #5288ae;
+  margin-left: -20px;
+}
+
+a {
+  // color: #b0bec5;
+  color: #880000;
+  text-decoration: underline;
+}
+
+a:hover {
+  // color: #cccccc;
+  color: #000;
+  text-decoration: none;
+}
+
+.mob-menu-icon {
+  line-height: 84px !important;
+}
+
+
+#content {
+  @media screen and (min-width: 993px) {
+    /* styles for browsers larger than 993px; */
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @media screen and (max-width: 992px) {
+    /* styles for browsers smaller than 993px; */
+    font-size: 0.9em;
+    padding-left: 20px;
+    padding-right: 20px;
+    h1 {
+      margin-left: 0px;
+    }
+    h2 {
+      margin-left: 0px;
+    }
+  }
+  ul {
+    list-style-position: inside;
+    list-style-image: url('/images/li.gif');
+  }
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  padding: 100px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.5;
+  color: #222;
+  background-color: #eee;
+  border-radius: 13px;
+  font-family: "Helvetica Neue Ultra Light", "Helvetica Neue", "Arial Narrow", "Arial", sans-serif;
+}
+
+//h1 {
+//  line-height: 1;
+//}
+
+p {
+  line-height: 1.4;
+}
+
+.drop-cat {
+  float: right;
+  margin-right: 1%;
+  i {
+    font-size: 2.7rem;
+    height: @navbar-height-mobile;
+  }
+  .btn-width {
+    width: 175px !important;
+  }
+}
+
+#slide-out {
+  span {
+    color: #444 !important;
+    font-size: 1rem;
+    display: block;
+    line-height: 64px;
+    padding: 0 15px;
+  }
+}
+
+/* .left-menu {
+  padding-top: 64px;
+}
+*/
