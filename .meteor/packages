@@ -4,4 +4,6 @@ standard-minifiers
 fourseven:scss
 flemay:less-autoprefixer
 aldeed:autoform
-summernote:summernote
+
+accounts-base
+accounts-password

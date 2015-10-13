@@ -1,3 +1,12 @@
 <template name="admin">
-	<h1>admin control panel</h1>
+    {{#if currentUser}}
+        <h1>Вы находитесь в разделе редактирования</h1>
+
+        <form id="myDiv" onSubmit="return false">
+            <textarea id="input" name="input"></textarea><br/>
+            <input type="submit" class="submit" value="опубликовать"/>
+        </form>
+    {{else}}
+        <h1>Login please</h1>
+    {{/if}}
 </template>
