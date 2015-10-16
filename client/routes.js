@@ -10,7 +10,7 @@ Router.route('/price', {name: 'price'});
 Router.route('/service', {name: 'service'});
 Router.route('/abuse', {name: 'abuse'});
 Router.route('/contacts', {name: 'contacts'});
-Router.route('/admin/:id?', {name: 'admin', data: function(){return {id: this.params.id}}});
+Router.route('/admin', {name: 'admin'});
 Router.route('/login', {name: 'login'});
 
 
