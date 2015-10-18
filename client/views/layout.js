@@ -26,6 +26,12 @@ Template.layout.helpers({
     },
     'click button': function(event, template) {
         Session.set('myAppVariable', Math.floor(Math.random() * 11));
+    },
+    isAdmin: function () {
+        if(!Meteor.user()) {
+            return false
+        }
+        return true
     }
 
 })

@@ -21,14 +21,17 @@ Template.admin.helpers({
 Template.admin.events(
     {
         "submit #myDiv": function (e, t) {
+            var pageURL = $(".pageURL").val();
+            var pageTitle = $(".pageTitle").val();
             var pageContent = $("#input").val();
 
-            Pages.upsert(this.id, {
-                $set: {
+            Pages.insert({
+                    url: $(".pageURL").val(),
+                    title: $(".pageTitle").val(),
                     content: $("#input").val()           // message
-                }
+
             });
-            Router.go('/');
+            Router.go($(".pageURL").val());
             e.preventDefault();
             return false;
         }
