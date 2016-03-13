@@ -25,7 +25,7 @@ Template.login.events({
         // Meteor.loginWithPassword() function.
         Meteor.loginWithPassword(email, password, function(err){
             if (err) {
-                Router.go('/')
+                toastr.error('username/password incorrect', 'Error!');
             }
             // The user might not have been found, or their passwword
             // could be incorrect. Inform the user that their
