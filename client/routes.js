@@ -1,28 +1,16 @@
 Router.configure({
-  layoutTemplate: 'menu',
+  layoutTemplate: 'layout',
   loadingTemplate: 'loading'
 });
 
-Router.route('/', function () {
-    this.render('main');
-});
+Router.route('/', {name: 'home'});
+Router.route('/about', {name: 'about'});
+Router.route('/organization', {name: 'organization'});
+Router.route('/price', {name: 'price'});
+Router.route('/service', {name: 'service'});
+Router.route('/abuse', {name: 'abuse'});
+Router.route('/contacts', {name: 'contacts'});
+Router.route('/admin', {name: 'admin'});
+Router.route('/login', {name: 'login'});
 
-Router.route('/price', function () {
-    this.render('price');
-});
 
-Router.route('/service', function () {
-    this.render('service');
-});
-
-Router.route('/abuse', function () {
-    this.render('abuse');
-});
-
-Router.route('/contacts', function () {
-    this.render('contacts');
-});
-
-Router.route('/splash.html', function () {
-    this.render('splash');
-});

@@ -1,4 +1,10 @@
 standard-app-packages
 iron:router
+standard-minifiers
+fourseven:scss
 flemay:less-autoprefixer
-reactive-var
+aldeed:autoform
+
+accounts-base
+accounts-password
+chrismbeckett:toastr

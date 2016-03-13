@@ -1,0 +1,90 @@
+<head>
+    <title>Единая Служба Технической Поддержки</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+          content="Единая Служба Технической Поддержки. Мы предоставляем услуги сервисного обслуживания и технической
+          поддержки в зоне ответственности конечных пользователей, вне зависимости от провайдеров интернет и
+          кабельного телевидения."/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<template name="layout">
+    <div class="page-wrap">
+        <nav>
+            <div class="drop-cat">
+                <a class='dropdown-button btn btn-width hide-on-small-and-down' href='/#'
+                   data-activates='dropdown1'>{{isCompany}}</a>
+                <a class='dropdown-button btn-flat white-text hide-on-med-and-up show-on-small' href='/#'
+                   data-activates='dropdown1'><i
+                        class="material-icons mob-menu-icon">more_horiz</i></a>
+
+
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="/">Физ. лица</a></li>
+                    <li><a href="/organization">Юр. лица</a></li>
+                </ul>
+            </div>
+            <ul id="slide-out" class="side-nav">
+                <li>{{>layoutUrl url="/price" description="Стоимость услуг"}}</li>
+                <li>{{>layoutUrl url="/service" description="Сервисный центр"}}</li>
+                <li>{{>layoutUrl url="/abuse" description="Работа с обращениями"}}</li>
+                <li>{{>layoutUrl url="/contacts" description="Контактная информация"}}</li>
+            </ul>
+            <a data-activates="slide-out" class="button-collapse show-on-large" href="#"><i
+                    class="mdi-navigation-menu"></i></a>
+            <a href="/"><img src="/images/logo.png" class="brand-logo center"></a>
+        </nav>
+        <div id="content">
+            {{> yield}}
+        </div>
+    </div>
+    <footer class="site-footer">
+        <!--metrika-->
+        <!-- Yandex.Metrika informer -->
+        <a href="https://metrika.yandex.ru/stat/?id=27397583&amp;from=informer"
+           target="_blank" rel="nofollow"><img src="//informer.yandex.ru/informer/27397583/1_0_FFFFFFFF_EFEFEFFF_0_uniques"
+                                               style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (уникальные посетители)" /></a>
+        <!-- /Yandex.Metrika informer -->
+
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter27397583 = new Ya.Metrika({id:27397583,
+                            webvisor:true,
+                            clickmap:true});
+                    } catch(e) { }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                        s = d.createElement("script"),
+                        f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript><div><img src="//mc.yandex.ru/watch/27397583" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+        {{>copyright}}
+    </footer>
+</template>
+
+<template name="layoutUrl">
+    {{#if isCurrentUrl url}}
+        <span>{{description}}</span>
+    {{else}}
+        <a href="{{url}}">{{description}}</a>
+    {{/if}}
+</template>
