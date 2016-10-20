@@ -1,0 +1,45 @@
+<link rel="import" href="../../src/shared-styles/shared-styles.html">
+
+<!--
+`estp-abyss`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="estp-abyss">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <style include="shared-styles"></style>
+    <h1>Работа с&nbsp;обращениями</h1>
+
+    <p>Ваши отзывы и&nbsp;предложения&nbsp;вы можете передать в&nbsp;наш офис с&nbsp;инженером, исполнявшим работы,
+      либо прислать нам на&nbsp;
+      <nobr><a href="mailto:office@estp-nsk.ru">электронную почту</a></nobr>.</p>
+    <p>В&nbsp;случае возникновения конфликтной ситуации, необходимо изложить ваши претензии в&nbsp;письменной форме
+      на&nbsp;специальном бланке (предоставляется инженером по&nbsp;требованию). Желательно продублировать ваши
+      претензии в&nbsp;электронном письме.</p>
+
+    <p>Срок рассмотрения обращений&nbsp;&mdash; 10&nbsp;рабочих дней (две календарные недели). После рассмотрения
+      обращения, мы&nbsp;с&nbsp;вами свяжемся для урегулирования сложившейся ситуации.</p>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'estp-abyss',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'estp-abyss',
+        },
+      },
+
+    });
+  </script>
+</dom-module>

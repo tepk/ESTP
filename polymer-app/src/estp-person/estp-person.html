@@ -1,0 +1,35 @@
+<link rel="import" href="../../src/shared-styles/shared-styles.html">
+
+<!--
+`estp-person`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="estp-person">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <style include="shared-styles"></style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'estp-person',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'estp-person',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
