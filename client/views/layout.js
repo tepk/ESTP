@@ -1,5 +1,5 @@
 Template.layout.onCreated(function () {
-
+    this.subscribe('pages');
 })
 
 Template.layout.onRendered(function () {
@@ -32,6 +32,9 @@ Template.layout.helpers({
             return false
         }
         return true
+    },
+    pages: function () {
+        return Pages.find({})
     }
 
 })
