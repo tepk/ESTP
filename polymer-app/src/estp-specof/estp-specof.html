@@ -1,0 +1,36 @@
+<link rel="import" href="../../src/shared-styles/shared-styles.html">
+
+
+<!--
+`estp-specof`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="estp-specof">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+      <style include="shared-styles"></style>
+    <h2>Специальные предложения</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'estp-specof',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'estp-specof',
+        },
+      },
+
+    });
+  </script>
+</dom-module>

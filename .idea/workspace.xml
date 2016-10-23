@@ -2,123 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c29cc402-3e55-4b0e-8a8c-9f6eef51a3ad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.deploy/mup.json" afterPath="$PROJECT_DIR$/meteor-app/.deploy/mup.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.deploy/settings.json" afterPath="$PROJECT_DIR$/meteor-app/.deploy/settings.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.editorconfig" afterPath="$PROJECT_DIR$/meteor-app/.editorconfig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/meteor-app/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.jshintrc" afterPath="$PROJECT_DIR$/meteor-app/.jshintrc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.meteor/.finished-upgraders" afterPath="$PROJECT_DIR$/meteor-app/.meteor/.finished-upgraders" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.meteor/.gitignore" afterPath="$PROJECT_DIR$/meteor-app/.meteor/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.meteor/.id" afterPath="$PROJECT_DIR$/meteor-app/.meteor/.id" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/meteor-app/.meteor/packages" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.meteor/platforms" afterPath="$PROJECT_DIR$/meteor-app/.meteor/platforms" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.meteor/release" afterPath="$PROJECT_DIR$/meteor-app/.meteor/release" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/meteor-app/.meteor/versions" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/meteor-app/.travis.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/meteor-app/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/meteor-app/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/client.js" afterPath="$PROJECT_DIR$/meteor-app/client/client.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/cleditor/jquery.cleditor.css" afterPath="$PROJECT_DIR$/meteor-app/client/lib/cleditor/jquery.cleditor.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/cleditor/jquery.cleditor.js" afterPath="$PROJECT_DIR$/meteor-app/client/lib/cleditor/jquery.cleditor.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/materialize.js" afterPath="$PROJECT_DIR$/meteor-app/client/lib/materialize.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/subscriptions.js" afterPath="$PROJECT_DIR$/meteor-app/client/lib/subscriptions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/routes.js" afterPath="$PROJECT_DIR$/meteor-app/client/routes.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_buttons.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_buttons.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_cards.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_cards.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_chips.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_chips.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_collapsible.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_collapsible.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_color.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_color.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_dropdown.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_dropdown.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_form.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_form.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_global.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_global.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_grid.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_grid.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_icons-material-design.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_icons-material-design.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_materialbox.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_materialbox.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_mixins.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_mixins.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_modal.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_modal.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_navbar.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_navbar.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_normalize.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_normalize.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_prefixer.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_prefixer.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_preloader.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_preloader.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_roboto.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_roboto.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_sideNav.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_sideNav.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_slider.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_slider.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_table_of_contents.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_table_of_contents.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_tabs.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_tabs.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_toast.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_toast.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_tooltip.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_tooltip.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_typography.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_typography.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_variables.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_variables.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/_waves.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/_waves.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/date_picker/_default.date.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/date_picker/_default.date.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/date_picker/_default.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/date_picker/_default.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/components/date_picker/_default.time.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/components/date_picker/_default.time.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/materialize/materialize.scss" afterPath="$PROJECT_DIR$/meteor-app/client/styles/materialize/materialize.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/styles/theme.less" afterPath="$PROJECT_DIR$/meteor-app/client/styles/theme.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/about.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/about.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/abuse.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/abuse.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/admin.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/admin.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/admin.js" afterPath="$PROJECT_DIR$/meteor-app/client/views/admin.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/common/copyright.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/common/copyright.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/common/copyright.js" afterPath="$PROJECT_DIR$/meteor-app/client/views/common/copyright.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/common/loading.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/common/loading.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/common/price1.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/common/price1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/contacts.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/contacts.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/home.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/home.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/home.js" afterPath="$PROJECT_DIR$/meteor-app/client/views/home.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/index.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/layout.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/layout.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/layout.js" afterPath="$PROJECT_DIR$/meteor-app/client/views/layout.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/login.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/login.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/login.js" afterPath="$PROJECT_DIR$/meteor-app/client/views/login.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/organization.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/organization.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/organization.js" afterPath="$PROJECT_DIR$/meteor-app/client/views/organization.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/price.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/price.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/service.html" afterPath="$PROJECT_DIR$/meteor-app/client/views/service.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/collections.js" afterPath="$PROJECT_DIR$/meteor-app/lib/collections.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/private/bootstrap.less" afterPath="$PROJECT_DIR$/meteor-app/private/bootstrap.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/private/jquery.cleditor.min.js" afterPath="$PROJECT_DIR$/meteor-app/private/jquery.cleditor.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/cleditor/images/buttons.gif" afterPath="$PROJECT_DIR$/meteor-app/public/cleditor/images/buttons.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/cleditor/images/toolbar.gif" afterPath="$PROJECT_DIR$/meteor-app/public/cleditor/images/toolbar.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/favicon.png" afterPath="$PROJECT_DIR$/meteor-app/public/favicon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/material-design-icons/LICENSE.txt" afterPath="$PROJECT_DIR$/meteor-app/public/font/material-design-icons/LICENSE.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/material-design-icons/Material-Design-Icons.eot" afterPath="$PROJECT_DIR$/meteor-app/public/font/material-design-icons/Material-Design-Icons.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/material-design-icons/Material-Design-Icons.svg" afterPath="$PROJECT_DIR$/meteor-app/public/font/material-design-icons/Material-Design-Icons.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/material-design-icons/Material-Design-Icons.ttf" afterPath="$PROJECT_DIR$/meteor-app/public/font/material-design-icons/Material-Design-Icons.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/material-design-icons/Material-Design-Icons.woff" afterPath="$PROJECT_DIR$/meteor-app/public/font/material-design-icons/Material-Design-Icons.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/material-design-icons/Material-Design-Icons.woff2" afterPath="$PROJECT_DIR$/meteor-app/public/font/material-design-icons/Material-Design-Icons.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Bold.ttf" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Bold.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Bold.woff" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Bold.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Bold.woff2" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Bold.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Light.ttf" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Light.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Light.woff" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Light.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Light.woff2" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Light.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Medium.ttf" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Medium.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Medium.woff" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Medium.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Medium.woff2" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Medium.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Regular.ttf" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Regular.woff" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Regular.woff2" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Thin.ttf" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Thin.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Thin.woff" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Thin.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Thin.woff2" afterPath="$PROJECT_DIR$/meteor-app/public/font/roboto/Roboto-Thin.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/Untitled.sketch" afterPath="$PROJECT_DIR$/meteor-app/public/images/Untitled.sketch" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/favicon.ico" afterPath="$PROJECT_DIR$/meteor-app/public/images/favicon.ico" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/li.gif" afterPath="$PROJECT_DIR$/meteor-app/public/images/li.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/logo.gif" afterPath="$PROJECT_DIR$/meteor-app/public/images/logo.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/logo.png" afterPath="$PROJECT_DIR$/meteor-app/public/images/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/Без имени-1.psd" afterPath="$PROJECT_DIR$/meteor-app/public/images/Без имени-1.psd" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/price-list.doc" afterPath="$PROJECT_DIR$/meteor-app/public/price-list.doc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/meteor-app/public/robots.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/server/publications.js" afterPath="$PROJECT_DIR$/meteor-app/server/publications.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/server/security.js" afterPath="$PROJECT_DIR$/meteor-app/server/security.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/meteor-app/server/server.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/server/startUp.js" afterPath="$PROJECT_DIR$/meteor-app/server/startUp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ESTP.iml" afterPath="$PROJECT_DIR$/.idea/ESTP.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polymer-app/bower.json" afterPath="$PROJECT_DIR$/polymer-app/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polymer-app/bower_components/iron-icons/iron-icons.html" afterPath="$PROJECT_DIR$/polymer-app/bower_components/iron-icons/iron-icons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polymer-app/src/estp-abyss/estp-abyss.html" afterPath="$PROJECT_DIR$/polymer-app/src/estp-abyss/estp-abyss.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polymer-app/src/estp-contacts/estp-contacts.html" afterPath="$PROJECT_DIR$/polymer-app/src/estp-contacts/estp-contacts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polymer-app/src/estp-logo/estp-logo.html" afterPath="$PROJECT_DIR$/polymer-app/src/estp-logo/estp-logo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polymer-app/src/estp-organization/estp-organization.html" afterPath="$PROJECT_DIR$/polymer-app/src/estp-organization/estp-organization.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polymer-app/src/estp-pages/estp-pages.html" afterPath="$PROJECT_DIR$/polymer-app/src/estp-pages/estp-pages.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polymer-app/src/estp-person/estp-person.html" afterPath="$PROJECT_DIR$/polymer-app/src/estp-person/estp-person.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polymer-app/src/estp-price/estp-price.html" afterPath="$PROJECT_DIR$/polymer-app/src/estp-price/estp-price.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polymer-app/src/estp-service/estp-service.html" afterPath="$PROJECT_DIR$/polymer-app/src/estp-service/estp-service.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polymer-app/src/estp3-app/estp3-app.html" afterPath="$PROJECT_DIR$/polymer-app/src/estp3-app/estp3-app.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polymer-app/src/shared-styles/shared-styles.html" afterPath="$PROJECT_DIR$/polymer-app/src/shared-styles/shared-styles.html" />
     </list>
     <ignored path="ESTP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -138,41 +34,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="shared-styles.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/polymer-app/src/shared-styles/shared-styles.html">
+      <file leaf-file-name="li.gif" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meteor-app/public/images/li.gif">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logo.gif" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meteor-app/public/images/logo.gif">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logo.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meteor-app/public/images/logo.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Без имени-1.psd" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meteor-app/public/images/Без имени-1.psd">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="favicon.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meteor-app/public/favicon.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meteor-app/client/views/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="estp-logo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-logo/estp-logo.html">
+      <file leaf-file-name="contacts.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meteor-app/client/views/contacts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="173" column="13" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
+            <state relative-caret-position="300">
+              <caret line="20" column="8" selection-start-line="2" selection-start-column="4" selection-end-line="20" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="price.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meteor-app/client/views/price.html">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/meteor-app/client/views/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="369" selection-end-column="99" />
+            <state relative-caret-position="285">
+              <caret line="19" column="85" selection-start-line="3" selection-start-column="4" selection-end-line="19" selection-end-column="85" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="estp-price.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-price/estp-price.html">
+      <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meteor-app/client/views/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="380" column="101" selection-start-line="380" selection-start-column="101" selection-end-line="380" selection-end-column="101" />
+            <state relative-caret-position="195">
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="abuse.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meteor-app/client/views/abuse.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="92" selection-start-line="1" selection-start-column="4" selection-end-line="11" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -196,10 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/compatibility/dgMap.js" />
-        <option value="$PROJECT_DIR$/client/lib/dgMap.js" />
-        <option value="$PROJECT_DIR$/client/views/menu.html" />
-        <option value="$PROJECT_DIR$/client/views/service.html" />
         <option value="$PROJECT_DIR$/client/views/abuse.html" />
         <option value="$PROJECT_DIR$/client/styles/main.less" />
         <option value="$PROJECT_DIR$/client/views/contacts.js" />
@@ -238,9 +175,19 @@
         <option value="$PROJECT_DIR$/meteor-app/.deploy/mup.json" />
         <option value="$PROJECT_DIR$/polymer-app/index.html" />
         <option value="$PROJECT_DIR$/polymer-app/bower_components/paper-tooltip/paper-tooltip.html" />
-        <option value="$PROJECT_DIR$/polymer-app/src/shared-styles/shared-styles.html" />
-        <option value="$PROJECT_DIR$/polymer-app/src/estp-logo/estp-logo.html" />
+        <option value="$PROJECT_DIR$/polymer-app/src/estp-pages/estp-pages.html" />
+        <option value="$PROJECT_DIR$/polymer-app/src/estp-service/estp-service.html" />
         <option value="$PROJECT_DIR$/polymer-app/src/estp-price/estp-price.html" />
+        <option value="$PROJECT_DIR$/polymer-app/src/estp-person/estp-person.html" />
+        <option value="$PROJECT_DIR$/polymer-app/bower_components/iron-icons/iron-icons.html" />
+        <option value="$PROJECT_DIR$/polymer-app/src/shared-styles/shared-styles.html" />
+        <option value="$PROJECT_DIR$/polymer-app/src/estp-organization/estp-organization.html" />
+        <option value="$PROJECT_DIR$/polymer-app/src/estp-contacts/estp-contacts.html" />
+        <option value="$PROJECT_DIR$/polymer-app/src/estp-abyss/estp-abyss.html" />
+        <option value="$PROJECT_DIR$/polymer-app/src/estp-specof/estp-specof.html" />
+        <option value="$PROJECT_DIR$/polymer-app/src/estp-logo/estp-logo.html" />
+        <option value="$PROJECT_DIR$/polymer-app/src/estp3-app/estp3-app.html" />
+        <option value="$PROJECT_DIR$/polymer-app/src/estp-404/estp-404.html" />
       </list>
     </option>
   </component>
@@ -279,6 +226,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -310,143 +259,13 @@
               <option name="myItemId" value="ESTP" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polymer-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared-styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESTP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESTP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polymer-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESTP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESTP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polymer-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estp-price" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESTP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESTP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polymer-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estp-logo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESTP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESTP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meteor-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESTP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESTP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meteor-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESTP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESTP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meteor-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/index.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="enabled" />
     <property name="js.meteor.project" value="true" />
@@ -458,18 +277,18 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/polymer-app/src" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/client/views/common" />
+      <recent name="$PROJECT_DIR$/public/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/meteor-app" />
       <recent name="$PROJECT_DIR$/private" />
       <recent name="$PROJECT_DIR$/client/lib" />
       <recent name="$PROJECT_DIR$/public/cleditor" />
       <recent name="$PROJECT_DIR$/client/cleditor" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/polymer-app/src" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/client/views/common" />
-      <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
   <component name="RunManager">
@@ -551,24 +370,24 @@
       <workItem from="1475569594702" duration="697000" />
       <workItem from="1476862318899" duration="2399000" />
       <workItem from="1476975923256" duration="829000" />
+      <workItem from="1476986008666" duration="16297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21665000" />
+    <option name="totallyTimeSpent" value="37962000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22269204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22269204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39638555" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -577,6 +396,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -596,135 +416,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/abuse.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/price.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/service.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/abuse.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/common/loading.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/public/cleditor/images/toolbar.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/public/cleditor/images/buttons.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/.meteor/packages">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/private/jquery.cleditor.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/common/price1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/server/publications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/organization.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/organization.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/lib/materialize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1899" column="20" selection-start-line="1899" selection-start-column="13" selection-end-line="1899" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="20" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/lib/collections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/meteor-app/client/views/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -767,13 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/meteor-app/client/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -809,74 +493,499 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-home/demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-home/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polymer-app/src/behaviours/lazy-pages-behavior.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-home/demo/index.html" />
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-home/index.html" />
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/behaviours/lazy-pages-behavior.html" />
     <entry file="file://$PROJECT_DIR$/meteor-app/.deploy/mup.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-home/estp-home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-home/estp-home.html" />
     <entry file="file://$PROJECT_DIR$/polymer-app/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <marker date="1476892113000" expanded="true" signature="0:776" ph="{&quot;name&quot;: &quot;estp&quot;...}" />
-            <marker date="1476892113000" expanded="true" signature="499:504" ph="{&quot;polymer&quot;: &quot;Polymer/polymer##^1.4.0&quot;...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-app/estp-app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-app/estp-app.html" />
     <entry file="file://$PROJECT_DIR$/meteor-app/client/views/service.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="47" column="128" selection-start-line="1" selection-start-column="4" selection-end-line="47" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/common/copyright.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/test/estp3-app/estp3-app_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/bower_components/paper-tooltip/paper-tooltip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/price.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/meteor-app/client/styles/theme.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="1" selection-start-line="70" selection-start-column="0" selection-end-line="80" selection-end-column="1" />
+        <state relative-caret-position="915">
+          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-pages/estp-pages.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-service/estp-service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="62" column="130" selection-start-line="62" selection-start-column="130" selection-end-line="62" selection-end-column="130" />
+          <folding>
+            <element signature="e#322#328#0#HTML" expanded="false" />
+            <element signature="e#368#374#0#HTML" expanded="false" />
+            <element signature="e#394#400#0#HTML" expanded="false" />
+            <element signature="e#410#416#0#HTML" expanded="false" />
+            <element signature="e#431#437#0#HTML" expanded="false" />
+            <element signature="e#503#509#0#HTML" expanded="false" />
+            <element signature="e#519#525#0#HTML" expanded="false" />
+            <element signature="e#564#570#0#HTML" expanded="false" />
+            <element signature="e#614#620#0#HTML" expanded="false" />
+            <element signature="e#626#632#0#HTML" expanded="false" />
+            <element signature="e#740#746#0#HTML" expanded="false" />
+            <element signature="e#769#775#0#HTML" expanded="false" />
+            <element signature="e#862#868#0#HTML" expanded="false" />
+            <element signature="e#1023#1029#0#HTML" expanded="false" />
+            <element signature="e#1029#1036#0#HTML" expanded="false" />
+            <element signature="e#1045#1051#0#HTML" expanded="false" />
+            <element signature="e#1077#1083#0#HTML" expanded="false" />
+            <element signature="e#1124#1130#0#HTML" expanded="false" />
+            <element signature="e#1158#1164#0#HTML" expanded="false" />
+            <element signature="e#1267#1273#0#HTML" expanded="false" />
+            <element signature="e#1288#1294#0#HTML" expanded="false" />
+            <element signature="e#1312#1318#0#HTML" expanded="false" />
+            <element signature="e#1422#1428#0#HTML" expanded="false" />
+            <element signature="e#1486#1492#0#HTML" expanded="false" />
+            <element signature="e#1574#1580#0#HTML" expanded="false" />
+            <element signature="e#1605#1611#0#HTML" expanded="false" />
+            <element signature="e#1644#1650#0#HTML" expanded="false" />
+            <element signature="e#1733#1739#0#HTML" expanded="false" />
+            <element signature="e#1807#1813#0#HTML" expanded="false" />
+            <element signature="e#1872#1878#0#HTML" expanded="false" />
+            <element signature="e#1930#1936#0#HTML" expanded="false" />
+            <element signature="e#1936#1943#0#HTML" expanded="false" />
+            <element signature="e#2032#2038#0#HTML" expanded="false" />
+            <element signature="e#2082#2088#0#HTML" expanded="false" />
+            <element signature="e#2193#2199#0#HTML" expanded="false" />
+            <element signature="e#2239#2245#0#HTML" expanded="false" />
+            <element signature="e#2479#2485#0#HTML" expanded="false" />
+            <element signature="e#2537#2543#0#HTML" expanded="false" />
+            <element signature="e#2693#2699#0#HTML" expanded="false" />
+            <element signature="e#2718#2724#0#HTML" expanded="false" />
+            <element signature="e#2754#2760#0#HTML" expanded="false" />
+            <element signature="e#2760#2767#0#HTML" expanded="false" />
+            <element signature="e#2779#2785#0#HTML" expanded="false" />
+            <element signature="e#2815#2821#0#HTML" expanded="false" />
+            <element signature="e#2838#2844#0#HTML" expanded="false" />
+            <element signature="e#2905#2911#0#HTML" expanded="false" />
+            <element signature="e#2993#2999#0#HTML" expanded="false" />
+            <element signature="e#3018#3024#0#HTML" expanded="false" />
+            <element signature="e#3043#3049#0#HTML" expanded="false" />
+            <element signature="e#3075#3081#0#HTML" expanded="false" />
+            <element signature="e#3081#3088#0#HTML" expanded="false" />
+            <element signature="e#3110#3116#0#HTML" expanded="false" />
+            <element signature="e#3136#3142#0#HTML" expanded="false" />
+            <element signature="e#3159#3165#0#HTML" expanded="false" />
+            <element signature="e#3181#3187#0#HTML" expanded="false" />
+            <element signature="e#3202#3208#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/bower_components/iron-icons/iron-icons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/shared-styles/shared-styles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-abyss/estp-abyss.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="e#364#370#0#HTML" expanded="true" />
+            <element signature="e#452#458#0#HTML" expanded="true" />
+            <element signature="e#472#478#0#HTML" expanded="true" />
+            <element signature="e#495#501#0#HTML" expanded="true" />
+            <element signature="e#511#517#0#HTML" expanded="true" />
+            <element signature="e#734#740#0#HTML" expanded="true" />
+            <element signature="e#835#841#0#HTML" expanded="true" />
+            <element signature="e#889#895#0#HTML" expanded="true" />
+            <element signature="e#897#903#0#HTML" expanded="true" />
+            <element signature="e#998#1004#0#HTML" expanded="true" />
+            <element signature="e#1004#1011#0#HTML" expanded="true" />
+            <element signature="e#1014#1020#0#HTML" expanded="true" />
+            <element signature="e#1028#1034#0#HTML" expanded="true" />
+            <element signature="e#1137#1143#0#HTML" expanded="true" />
+            <element signature="e#1144#1150#0#HTML" expanded="true" />
+            <element signature="e#1350#1356#0#HTML" expanded="true" />
+            <element signature="e#1395#1401#0#HTML" expanded="true" />
+            <element signature="e#1412#1418#0#HTML" expanded="true" />
+            <element signature="e#1439#1445#0#HTML" expanded="true" />
+            <element signature="e#1463#1469#0#HTML" expanded="true" />
+            <element signature="e#1481#1487#0#HTML" expanded="true" />
+            <element signature="e#1487#1494#0#HTML" expanded="true" />
+            <element signature="e#1497#1503#0#HTML" expanded="true" />
+            <element signature="e#1567#1573#0#HTML" expanded="true" />
+            <element signature="e#1648#1654#0#HTML" expanded="true" />
+            <element signature="e#1675#1681#0#HTML" expanded="true" />
+            <element signature="e#1681#1688#0#HTML" expanded="true" />
+            <element signature="e#1756#1762#0#HTML" expanded="true" />
+            <element signature="e#1763#1769#0#HTML" expanded="true" />
+            <element signature="e#1781#1787#0#HTML" expanded="true" />
+            <element signature="e#1787#1794#0#HTML" expanded="true" />
+            <element signature="e#1807#1813#0#HTML" expanded="true" />
+            <element signature="e#1889#1895#0#HTML" expanded="true" />
+            <element signature="e#1929#1935#0#HTML" expanded="true" />
+            <element signature="e#1951#1957#0#HTML" expanded="true" />
+            <element signature="e#1976#1982#0#HTML" expanded="true" />
+            <element signature="e#2018#2024#0#HTML" expanded="true" />
+            <element signature="e#2054#2060#0#HTML" expanded="true" />
+            <element signature="e#2151#2157#0#HTML" expanded="true" />
+            <element signature="e#2161#2167#0#HTML" expanded="true" />
+            <element signature="e#2214#2220#0#HTML" expanded="true" />
+            <element signature="e#2246#2252#0#HTML" expanded="true" />
+            <element signature="e#2408#2414#0#HTML" expanded="true" />
+            <element signature="e#2419#2425#0#HTML" expanded="true" />
+            <element signature="e#2460#2466#0#HTML" expanded="true" />
+            <element signature="e#2524#2530#0#HTML" expanded="true" />
+            <element signature="e#2531#2537#0#HTML" expanded="true" />
+            <element signature="e#2544#2550#0#HTML" expanded="true" />
+            <element signature="e#2644#2650#0#HTML" expanded="true" />
+            <element signature="e#2652#2658#0#HTML" expanded="true" />
+            <element signature="e#2698#2704#0#HTML" expanded="true" />
+            <element signature="e#2725#2731#0#HTML" expanded="true" />
+            <element signature="e#2774#2780#0#HTML" expanded="true" />
+            <element signature="e#2944#2950#0#HTML" expanded="true" />
+            <element signature="e#2983#2989#0#HTML" expanded="true" />
+            <element signature="e#2989#2996#0#HTML" expanded="true" />
+            <element signature="e#3004#3010#0#HTML" expanded="true" />
+            <element signature="e#3015#3021#0#HTML" expanded="true" />
+            <element signature="e#3068#3074#0#HTML" expanded="true" />
+            <element signature="e#3089#3095#0#HTML" expanded="true" />
+            <element signature="e#3135#3141#0#HTML" expanded="true" />
+            <element signature="e#3214#3220#0#HTML" expanded="true" />
+            <element signature="e#3224#3230#0#HTML" expanded="true" />
+            <element signature="e#3291#3297#0#HTML" expanded="true" />
+            <element signature="e#3320#3326#0#HTML" expanded="true" />
+            <element signature="e#3451#3457#0#HTML" expanded="true" />
+            <element signature="e#3477#3483#0#HTML" expanded="true" />
+            <element signature="e#3483#3490#0#HTML" expanded="true" />
+            <element signature="e#3500#3506#0#HTML" expanded="true" />
+            <element signature="e#3699#3705#0#HTML" expanded="true" />
+            <element signature="e#3759#3765#0#HTML" expanded="true" />
+            <element signature="e#3872#3878#0#HTML" expanded="true" />
+            <element signature="e#3897#3903#0#HTML" expanded="true" />
+            <element signature="e#4020#4026#0#HTML" expanded="true" />
+            <element signature="e#4028#4034#0#HTML" expanded="true" />
+            <element signature="e#4245#4251#0#HTML" expanded="true" />
+            <element signature="e#4264#4270#0#HTML" expanded="true" />
+            <element signature="e#4281#4287#0#HTML" expanded="true" />
+            <element signature="e#4352#4358#0#HTML" expanded="true" />
+            <element signature="e#4414#4420#0#HTML" expanded="true" />
+            <element signature="e#4420#4426#0#HTML" expanded="true" />
+            <element signature="e#4434#4440#0#HTML" expanded="true" />
+            <element signature="e#4444#4450#0#HTML" expanded="true" />
+            <element signature="e#4483#4489#0#HTML" expanded="true" />
+            <element signature="e#4683#4689#0#HTML" expanded="true" />
+            <element signature="e#4689#4696#0#HTML" expanded="true" />
+            <element signature="e#4725#4731#0#HTML" expanded="true" />
+            <element signature="e#4735#4741#0#HTML" expanded="true" />
+            <element signature="e#4749#4755#0#HTML" expanded="true" />
+            <element signature="e#4756#4762#0#HTML" expanded="true" />
+            <element signature="e#4763#4769#0#HTML" expanded="true" />
+            <element signature="e#4807#4813#0#HTML" expanded="true" />
+            <element signature="e#4816#4822#0#HTML" expanded="true" />
+            <element signature="e#4890#4896#0#HTML" expanded="true" />
+            <element signature="e#4910#4916#0#HTML" expanded="true" />
+            <element signature="e#4992#4998#0#HTML" expanded="true" />
+            <element signature="e#5010#5016#0#HTML" expanded="true" />
+            <element signature="e#5040#5046#0#HTML" expanded="true" />
+            <element signature="e#5085#5091#0#HTML" expanded="true" />
+            <element signature="e#5136#5142#0#HTML" expanded="true" />
+            <element signature="e#5149#5155#0#HTML" expanded="true" />
+            <element signature="e#5192#5198#0#HTML" expanded="true" />
+            <element signature="e#5204#5210#0#HTML" expanded="true" />
+            <element signature="e#5294#5300#0#HTML" expanded="true" />
+            <element signature="e#5319#5325#0#HTML" expanded="true" />
+            <element signature="e#5330#5336#0#HTML" expanded="true" />
+            <element signature="e#5343#5349#0#HTML" expanded="true" />
+            <element signature="e#5372#5378#0#HTML" expanded="true" />
+            <element signature="e#5380#5386#0#HTML" expanded="true" />
+            <element signature="e#5393#5399#0#HTML" expanded="true" />
+            <element signature="e#5404#5410#0#HTML" expanded="true" />
+            <element signature="e#5548#5554#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-contacts/estp-contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="e#873#879#0#HTML" expanded="true" />
+            <element signature="e#977#983#0#HTML" expanded="true" />
+            <element signature="e#1004#1010#0#HTML" expanded="true" />
+            <element signature="e#1138#1144#0#HTML" expanded="true" />
+            <element signature="e#1149#1155#0#HTML" expanded="true" />
+            <element signature="e#1166#1172#0#HTML" expanded="true" />
+            <element signature="e#1172#1179#0#HTML" expanded="true" />
+            <element signature="e#1200#1206#0#HTML" expanded="true" />
+            <element signature="e#1281#1287#0#HTML" expanded="true" />
+            <element signature="e#1388#1394#0#HTML" expanded="true" />
+            <element signature="e#1436#1442#0#HTML" expanded="true" />
+            <element signature="e#1569#1576#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-organization/estp-organization.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#594#600#0#HTML" expanded="true" />
+            <element signature="e#600#607#0#HTML" expanded="true" />
+            <element signature="e#693#699#0#HTML" expanded="true" />
+            <element signature="e#783#789#0#HTML" expanded="true" />
+            <element signature="e#812#818#0#HTML" expanded="true" />
+            <element signature="e#849#855#0#HTML" expanded="true" />
+            <element signature="e#855#862#0#HTML" expanded="true" />
+            <element signature="e#934#940#0#HTML" expanded="true" />
+            <element signature="e#989#995#0#HTML" expanded="true" />
+            <element signature="e#1008#1014#0#HTML" expanded="true" />
+            <element signature="e#1014#1021#0#HTML" expanded="true" />
+            <element signature="e#1024#1030#0#HTML" expanded="true" />
+            <element signature="e#1136#1142#0#HTML" expanded="true" />
+            <element signature="e#1151#1157#0#HTML" expanded="true" />
+            <element signature="e#1165#1171#0#HTML" expanded="true" />
+            <element signature="e#1188#1194#0#HTML" expanded="true" />
+            <element signature="e#1194#1201#0#HTML" expanded="true" />
+            <element signature="e#1203#1209#0#HTML" expanded="true" />
+            <element signature="e#1267#1273#0#HTML" expanded="true" />
+            <element signature="e#1273#1280#0#HTML" expanded="true" />
+            <element signature="e#1283#1289#0#HTML" expanded="true" />
+            <element signature="e#1341#1347#0#HTML" expanded="true" />
+            <element signature="e#1407#1413#0#HTML" expanded="true" />
+            <element signature="e#1590#1596#0#HTML" expanded="true" />
+            <element signature="e#1675#1681#0#HTML" expanded="true" />
+            <element signature="e#1782#1788#0#HTML" expanded="true" />
+            <element signature="e#1864#1870#0#HTML" expanded="true" />
+            <element signature="e#1967#1973#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-person/estp-person.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="18" column="192" selection-start-line="18" selection-start-column="192" selection-end-line="18" selection-end-column="192" />
+          <folding>
+            <element signature="e#361#367#0#HTML" expanded="true" />
+            <element signature="e#422#428#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-price/estp-price.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="47" />
+          <folding>
+            <element signature="e#662#668#0#HTML" expanded="true" />
+            <element signature="e#677#683#0#HTML" expanded="true" />
+            <element signature="e#711#717#0#HTML" expanded="true" />
+            <element signature="e#739#745#0#HTML" expanded="true" />
+            <element signature="e#789#795#0#HTML" expanded="true" />
+            <element signature="e#895#901#0#HTML" expanded="true" />
+            <element signature="e#915#921#0#HTML" expanded="true" />
+            <element signature="e#997#1003#0#HTML" expanded="true" />
+            <element signature="e#1004#1010#0#HTML" expanded="true" />
+            <element signature="e#1032#1038#0#HTML" expanded="true" />
+            <element signature="e#1190#1196#0#HTML" expanded="true" />
+            <element signature="e#1211#1217#0#HTML" expanded="true" />
+            <element signature="e#1219#1225#0#HTML" expanded="true" />
+            <element signature="e#1296#1302#0#HTML" expanded="true" />
+            <element signature="e#1341#1347#0#HTML" expanded="true" />
+            <element signature="e#1404#1410#0#HTML" expanded="true" />
+            <element signature="e#1411#1417#0#HTML" expanded="true" />
+            <element signature="e#1475#1481#0#HTML" expanded="true" />
+            <element signature="e#1508#1514#0#HTML" expanded="true" />
+            <element signature="e#1522#1528#0#HTML" expanded="true" />
+            <element signature="e#1586#1592#0#HTML" expanded="true" />
+            <element signature="e#1681#1687#0#HTML" expanded="true" />
+            <element signature="e#1747#1753#0#HTML" expanded="true" />
+            <element signature="e#1830#1836#0#HTML" expanded="true" />
+            <element signature="e#1861#1867#0#HTML" expanded="true" />
+            <element signature="e#1940#1946#0#HTML" expanded="true" />
+            <element signature="e#1966#1972#0#HTML" expanded="true" />
+            <element signature="e#2023#2029#0#HTML" expanded="true" />
+            <element signature="e#2037#2043#0#HTML" expanded="true" />
+            <element signature="e#2152#2158#0#HTML" expanded="true" />
+            <element signature="e#2186#2192#0#HTML" expanded="true" />
+            <element signature="e#2201#2207#0#HTML" expanded="true" />
+            <element signature="e#2255#2261#0#HTML" expanded="true" />
+            <element signature="e#2288#2294#0#HTML" expanded="true" />
+            <element signature="e#2303#2309#0#HTML" expanded="true" />
+            <element signature="e#2316#2322#0#HTML" expanded="true" />
+            <element signature="e#2449#2455#0#HTML" expanded="true" />
+            <element signature="e#2557#2563#0#HTML" expanded="true" />
+            <element signature="e#2652#2658#0#HTML" expanded="true" />
+            <element signature="e#2660#2666#0#HTML" expanded="true" />
+            <element signature="e#2681#2687#0#HTML" expanded="true" />
+            <element signature="e#2699#2705#0#HTML" expanded="true" />
+            <element signature="e#2761#2767#0#HTML" expanded="true" />
+            <element signature="e#2840#2846#0#HTML" expanded="true" />
+            <element signature="e#2983#2989#0#HTML" expanded="true" />
+            <element signature="e#3000#3006#0#HTML" expanded="true" />
+            <element signature="e#3055#3061#0#HTML" expanded="true" />
+            <element signature="e#3233#3239#0#HTML" expanded="true" />
+            <element signature="e#3281#3287#0#HTML" expanded="true" />
+            <element signature="e#3307#3313#0#HTML" expanded="true" />
+            <element signature="e#3339#3345#0#HTML" expanded="true" />
+            <element signature="e#3388#3394#0#HTML" expanded="true" />
+            <element signature="e#3402#3408#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-specof/estp-specof.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-logo/estp-logo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="182" column="45" selection-start-line="182" selection-start-column="45" selection-end-line="182" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="6" selection-start-column="12" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp3-app/estp3-app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-404/estp-404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meteor-app/public/images/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meteor-app/public/images/li.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meteor-app/public/images/logo.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meteor-app/public/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meteor-app/public/images/Без имени-1.psd">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meteor-app/public/favicon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -889,6 +998,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/meteor-app/client/views/contacts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -897,74 +1014,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/home.js">
+    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/common/copyright.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="44" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polymer-app/test/estp3-app/estp3-app_test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polymer-app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polymer-app/bower_components/paper-tooltip/paper-tooltip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polymer-app/src/shared-styles/shared-styles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-logo/estp-logo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="173" column="13" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meteor-app/client/views/price.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="369" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-price/estp-price.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="380" column="101" selection-start-line="380" selection-start-column="101" selection-end-line="380" selection-end-column="101" />
+        <state relative-caret-position="285">
+          <caret line="19" column="85" selection-start-line="3" selection-start-column="4" selection-end-line="19" selection-end-column="85" />
           <folding />
         </state>
       </provider>

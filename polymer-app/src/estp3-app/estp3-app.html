@@ -13,9 +13,12 @@
 <link rel="import" href="../../src/estp-service/estp-service.html">
 <link rel="import" href="../../src/estp-abyss/estp-abyss.html">
 <link rel="import" href="../../src/estp-contacts/estp-contacts.html">
+<link rel="import" href="../../src/estp-specof/estp-specof.html">
+<link rel="import" href="../../src/estp-404/estp-404.html">
 
 <!--Iron elements-->
 <link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html">
 
 <!--UNUSED DIRECTLY-->
 <link rel="import" href="../../src/shared-styles/shared-styles.html">
@@ -31,6 +34,14 @@
                 padding-left: 73px;
                 box-sizing: border-box;
             }
+            .copyright {
+                display: block;
+                font-size: 0.8em;
+                padding-top: 15px;
+                width: 100%;
+                text-align: center;
+                color: #5288ae;
+            }
         </style>
         <style include="shared-styles"></style>
         <app-location route="{{route}}"></app-location>
@@ -38,16 +49,19 @@
         </app-route>
         <estp-logo id="logo"></estp-logo>
         <estp-pages id="pages">
-            <iron-pages selected="[[routeData.page]]" attr-for-selected="name">
+            <h1>Единая Служба Технической Поддержки</h1>
+            <iron-pages selected="{{routeData.page}}" attr-for-selected="name" fallback-selection="404">
                 <estp-organization name="organization"></estp-organization>
                 <estp-person name="person"></estp-person>
                 <estp-price name="price"></estp-price>
                 <estp-service name="service"></estp-service>
                 <estp-abyss name="abyss"></estp-abyss>
                 <estp-contacts name="contacts"></estp-contacts>
+                <estp-specof name="special-offer"></estp-specof>
+                <estp-404 name="404"></estp-404>
             </iron-pages>
         </estp-pages>
-        <paper-card>&copy; [[copyright]]</paper-card>
+        <span class="copyright">&copy; 2014&ndash;[[copyright]], Единая Служба Технической Поддержки</span>
     </template>
 
     <script>
@@ -59,18 +73,13 @@
             },
             properties: {
                 copyright: {
-                    type: String,
-                    computed: '__getCurrentYear()',
+                    type: Date,
+                    value: function () {
+                        return new Date().getFullYear();
+                    }
                 },
-            },
 
-            __getCurrentYear: function () {
-                var currentYear;
-                currentYear = new Date().getFullYear()
-                console.log(currentYear)
-                return currentYear.toString()
-            },
-
+            }
         });
     </script>
 </dom-module>

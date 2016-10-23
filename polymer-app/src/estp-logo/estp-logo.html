@@ -39,6 +39,15 @@
                 font-family: 'Roboto', 'Noto', sans-serif;
             }
 
+            paper-card {
+
+                display: table;
+                text-align: center;
+                overflow: hidden;
+                font-family: sans-serif;
+                background-color: #0b97c4;
+            }
+
             #pc1 {
                 position: absolute;
                 top: 3px;
@@ -119,13 +128,14 @@
                 left: 3px;
             }
 
-            paper-card {
+            #menu7 {
+                position: absolute;
+                width: 66px;
+                height: 66px;
+                top: 500px;
+                left: 3px;
+                background-color: rgba(255,71,146,1);
 
-                display: table;
-                text-align: center;
-                overflow: hidden;
-                font-family: sans-serif;
-                background-color: #0b97c4;
             }
 
             #letter1, #letter2, #letter3, #letter4 {
@@ -143,23 +153,34 @@
             }
 
             #menu2 :hover {
-                background-color: #0b97c4;
-            }
+                background-color: #ffffff;
+                color: #0b97c4;            }
 
             #menu3 :hover {
-                background-color: #0b97c4;
-            }
+                background-color: #ffffff;
+                color: #0b97c4;            }
 
             #menu4 :hover {
-                background-color: #0b97c4;
-            }
+                background-color: #ffffff;
+                color: #0b97c4;            }
 
             #menu5 :hover {
-                background-color: #0b97c4;
-            }
+                background-color: #ffffff;
+                color: #0b97c4;            }
 
             #menu6 :hover {
-                background-color: #0b97c4;
+                background-color: #ffffff;
+                color: #0b97c4;
+            }
+
+            #menu7 :hover {
+                background-color: #ffffff;
+                color: rgba(255,71,146,1);
+
+            }
+
+            paper-tooltip#offer {
+                --paper-tooltip-background: #FF4792;
             }
 
             span {
@@ -169,14 +190,24 @@
                 font-size: 1.3rem;
             }
 
+            .tooltip-div {
+                height: 50px;
+                min-width: 120px;
+                font-size: 1.2em;
+                text-align: center;
+            }
+
             paper-tooltip {
                 --paper-tooltip-background: #0b97c4;
+                --paper-tooltip-opacity: 0.95;
             }
         </style>
+        <a href="/">
         <paper-card id="pc1"><span id="letter1">Е</span></paper-card>
         <paper-card id="pc2"><span id="letter2">С</span></paper-card>
         <paper-card id="pc3"><span id="letter3">Т</span></paper-card>
         <paper-card id="pc4"><span id="letter4">П</span></paper-card>
+        </a>
         <a href="/organization">
             <paper-card id="menu1"><span><iron-icon icon="social:group"></iron-icon></span></paper-card>
         </a>
@@ -195,14 +226,16 @@
         <a href="/contacts">
             <paper-card id="menu6"><span><iron-icon icon="communication:call"></iron-icon></span></paper-card>
         </a>
-        <paper-tooltip for="menu1" offset="10" position="right" animation-delay="300">Юридическим лицам</paper-tooltip>
-        <paper-tooltip for="menu2" offset="10" position="right" animation-delay="300">Физическим лицам</paper-tooltip>
-        <paper-tooltip for="menu3" offset="10" position="right" animation-delay="300">Стоимость услуг</paper-tooltip>
-        <paper-tooltip for="menu4" offset="10" position="right" animation-delay="300">Сервисный центр</paper-tooltip>
-        <paper-tooltip for="menu5" offset="10" position="right" animation-delay="300">Работа с обращениями
-        </paper-tooltip>
-        <paper-tooltip for="menu6" offset="10" position="right" animation-delay="300">Контактная информация
-        </paper-tooltip>
+        <a href="/special-offer">
+            <paper-card id="menu7"><span>%</span></paper-card>
+        </a>
+        <paper-tooltip for="menu1" offset="10" position="right" animation-delay="300"><span class="tooltip-div">Юридическим лицам</span></paper-tooltip>
+        <paper-tooltip for="menu2" offset="10" position="right" animation-delay="300"><span class="tooltip-div">Физическим лицам</span></paper-tooltip>
+        <paper-tooltip for="menu3" offset="10" position="right" animation-delay="300"><span class="tooltip-div">Стоимость услуг</span></paper-tooltip>
+        <paper-tooltip for="menu4" offset="10" position="right" animation-delay="300"><span class="tooltip-div">Сервисный центр</span></paper-tooltip>
+        <paper-tooltip for="menu5" offset="10" position="right" animation-delay="300"><span class="tooltip-div">Вопросы и ответы</span></paper-tooltip>
+        <paper-tooltip for="menu6" offset="10" position="right" animation-delay="300"><span class="tooltip-div">Контактная информация</span></paper-tooltip>
+        <paper-tooltip for="menu7" id="offer" offset="10" position="right" animation-delay="300"><span class="tooltip-div">Специальные предложения</span></paper-tooltip>
     </template>
 
     <script>
@@ -290,7 +323,13 @@
                                     name: 'fade-in-animation',
                                     node: this.$.menu6,
                                     timing: {delay: 1200, duration: 500}
-                                }, {
+                                },
+                                {
+                                    name: 'fade-in-animation',
+                                    node: this.$.menu7,
+                                    timing: {delay: 1200, duration: 500}
+                                },
+                                {
                                     name: 'slide-from-top-animation',
                                     node: this.$.menu1,
                                     timing: {delay: 700, duration: 200}
@@ -318,6 +357,11 @@
                                 {
                                     name: 'slide-from-top-animation',
                                     node: this.$.menu6,
+                                    timing: {delay: 1200, duration: 200}
+                                },
+                                {
+                                    name: 'slide-from-top-animation',
+                                    node: this.$.menu7,
                                     timing: {delay: 1200, duration: 200}
                                 },
                             ],
