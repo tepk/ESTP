@@ -1,0 +1,51 @@
+<html><head><link rel="import" href="../../bower_components/polymer/polymer.html">
+
+
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../bower_components/iron-icons/communication-icons.html">
+
+
+<link rel="import" href="../../src/shared-styles/shared-styles.html">
+
+
+
+</head><body><dom-module id="estp-contacts">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      #info {
+        font-size: 0.9em;
+      }
+    </style>
+    <style include="shared-styles"></style>
+      <h2>Контактная информация</h2>
+      <h4>Краткие выходные данные</h4>
+      <p>
+          <iron-icon icon="schedule"></iron-icon><span> 8:00–20:00</span> <br>
+          <iron-icon icon="communication:phone"></iron-icon><span> (383) 287-98-94</span> <br>
+          <iron-icon icon="communication:mail-outline"></iron-icon><span> <a href="mailto:office@estp-nsk.ru">office@estp-nsk.ru</a></span>
+      </p>
+      <h4>Если подробнее</h4>
+      <p>Мы работаем без выходных. Диспетчер ответит на ваш звонок с 8 утра до 8 вечера и передаст вашу заявку ближайшему свободному инженеру. После этого с вами свяжется инженер лично, для согласования времени визита.</p>
+      <p>Мы&nbsp;дорожим своей репутацией, но&nbsp;в&nbsp;жизни случаются различные ситуации, связанные с&nbsp;недопониманием, поэтому, если у&nbsp;вас возникла конфликтная ситуация с&nbsp;инженером&nbsp;— позвоните нам и&nbsp;мы&nbsp;решим создавшуюся проблему.</p>
+      <p>Мы&nbsp;всегда предоставляем гарантию на&nbsp;свои работы, и, если вдруг вы&nbsp;считаете, что работа была выполнена ненадлежащим образом&nbsp;— в&nbsp;кратчайшие сроки исправим свою оплошность.</p>
+
+      <ul>
+          <li>Единая Служба Технической Поддрежки обрабатывает Ваше обращение, будь
+              то&nbsp;звонок, сообщение или электронное письмо;</li>
+          <li>Инженеры согласовывают время визита и&nbsp;осуществляют выезд на&nbsp;указанный адрес, проводят бесплатную
+              диагностику, озвучивают ориентировочную цену работ;</li>
+          <li>Если с&nbsp;ценой&nbsp;Вы согласны&nbsp;— инженер приступает к&nbsp;работе;</li>
+          <li>Некоторые виды работ выполняются исключительно в&nbsp;нашем сервисном центре. Обычно, такого рода работы
+              занимают сутки;</li>
+          <li>В&nbsp;ином случае, инженер обговаривает сроки до&nbsp;начала работ.</li>
+      </ul>
+      <p> </p>
+  </template>
+
+  <script>Polymer({is:"estp-contacts",properties:{prop1:{type:String,value:"estp-contacts"}}});</script>
+</dom-module>
+</body></html>

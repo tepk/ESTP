@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head>
+    <title>estp-logo test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../estp-logo.html">
+  </head>
+  <body>
+
+    <test-fixture id="basic">
+      <template>
+        <estp-logo></estp-logo>
+      </template>
+    </test-fixture>
+
+    <script>suite("estp-logo",function(){test("instantiating the element works",function(){var t=fixture("basic");assert.equal(t.is,"estp-logo")})});</script>
+  
+
+</body></html>

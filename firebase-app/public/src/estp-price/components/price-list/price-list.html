@@ -1,0 +1,54 @@
+<html><head><link rel="import" href="../../../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
+<link rel="import" href="../../../../bower_components/paper-card/paper-card.html">
+
+
+
+</head><body><dom-module id="price-list">
+    <template>
+        <style include="iron-flex iron-positioning iron-flex-alignment"></style>
+        <style>
+            :host {
+                display: block;
+            }
+
+            paper-card {
+                padding-right: 0px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-left: 20px;
+                display: block;
+                min-height: 3em;
+                padding-left: 25px;
+                max-width: 60em;
+                position: relative;
+                @apply(--layout-horizontal);
+            }
+
+            .price {
+                width: 140px;
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                border-left: 1px solid #e7e7e7;
+            }
+            .name {
+                @apply(--layout-flex);
+                vertical-align: middle;
+
+            }
+
+
+        </style>
+        <paper-card class="layout horizontal">
+            <div class="name vertical layout center-justified">[[name]]</div>
+            <div class="price vertical layout center-justified">[[price]]</div>
+
+
+        </paper-card>
+    </template>
+
+    <script>Polymer({is:"price-list",properties:{price:{type:String,value:""},name:{type:String,value:""}}});</script>
+</dom-module>
+</body></html>

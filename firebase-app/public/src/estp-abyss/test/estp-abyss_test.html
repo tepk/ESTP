@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head>
+    <title>estp-abyss test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../estp-abyss.html">
+  </head>
+  <body>
+
+    <test-fixture id="basic">
+      <template>
+        <estp-abyss></estp-abyss>
+      </template>
+    </test-fixture>
+
+    <script>suite("estp-abyss",function(){test("instantiating the element works",function(){var s=fixture("basic");assert.equal(s.is,"estp-abyss")})});</script>
+  
+
+</body></html>

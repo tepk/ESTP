@@ -1,0 +1,90 @@
+<html><head><link rel="import" href="../../bower_components/polymer/polymer.html">
+
+
+<link rel="import" href="../../src/shared-styles/shared-styles.html">
+
+
+<link rel="import" href="../../bower_components/app-route/app-location.html">
+<link rel="import" href="../../bower_components/app-route/app-route.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
+
+
+<link rel="import" href="../../src/estp-logo/estp-logo.html">
+<link rel="import" href="../../src/estp-pages/estp-pages.html">
+<link rel="import" href="../../src/estp-organization/estp-organization.html">
+<link rel="import" href="../../src/estp-person/estp-person.html">
+<link rel="import" href="../../src/estp-price/estp-price.html">
+<link rel="import" href="../../src/estp-service/estp-service.html">
+<link rel="import" href="../../src/estp-abyss/estp-abyss.html">
+<link rel="import" href="../../src/estp-contacts/estp-contacts.html">
+<link rel="import" href="../../src/estp-specof/estp-specof.html">
+<link rel="import" href="../../src/estp-404/estp-404.html">
+
+
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
+
+
+<link rel="import" href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html">
+<link rel="import" href="../../bower_components/paper-header-panel/paper-header-panel.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+
+
+
+
+
+
+
+</head><body><dom-module id="estp3-app">
+    <template>
+        <style>
+            :host {
+                display: block;
+                width: 100%;
+                position: relative;
+                padding-left: 73px;
+                box-sizing: border-box;
+
+            }
+            body {
+                overflow-y: scroll !important;
+            }
+
+            app-drawer-layout {
+                --app-drawer-width: 70px;
+            }
+            .copyright {
+                display: block;
+                font-size: 0.8em;
+                padding-top: 15px;
+                width: 100%;
+                text-align: center;
+                color: #5288ae;
+            }
+
+        </style>
+        <style include="shared-styles"></style>
+        <app-location route="{{route}}"></app-location>
+        <app-route route="{{route}}" pattern="/:page" data="{{routeData}}" tail="{{tail}}">
+        </app-route>
+
+        <estp-logo id="logo"></estp-logo>
+        <estp-pages id="pages">
+            <h1>Единая Служба Технической Поддержки</h1>
+            <iron-pages selected="{{routeData.page}}" attr-for-selected="name" fallback-selection="organization">
+                <estp-organization name="organization"></estp-organization>
+                <estp-person name="person"></estp-person>
+                <estp-price name="price"></estp-price>
+                <estp-service name="service"></estp-service>
+                <estp-abyss name="abyss"></estp-abyss>
+                <estp-contacts name="contacts"></estp-contacts>
+                <estp-specof name="special-offer"></estp-specof>
+                <estp-404 name="404"></estp-404>
+            </iron-pages>
+        </estp-pages>
+        <span class="copyright">© 2014–[[copyright]], Единая Служба Технической Поддержки</span>
+</template>
+
+    <script>Polymer({is:"estp3-app",ready:function(e,t){this.$.logo.animate()},properties:{copyright:{type:Date,value:function(){return(new Date).getFullYear()}}}});</script>
+</dom-module>
+</body></html>
