@@ -2,7 +2,115 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c29cc402-3e55-4b0e-8a8c-9f6eef51a3ad" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polymer-app/polymer.json" afterPath="$PROJECT_DIR$/polymer-app/polymer.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/app-layout/app-drawer-layout/app-drawer-layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/app-layout/app-drawer/app-drawer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/app-route/app-location.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/app-route/app-route-converter-behavior.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/app-route/app-route.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/iron-icon/iron-icon.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/iron-icons/communication-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/iron-icons/editor-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/iron-icons/iron-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/iron-icons/social-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/iron-location/iron-location.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/iron-location/iron-query-params.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/iron-pages/iron-pages.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/neon-animation/animations/fade-in-animation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/neon-animation/animations/fade-out-animation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/neon-animation/animations/slide-from-bottom-animation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/neon-animation/animations/slide-from-left-animation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/neon-animation/animations/slide-from-right-animation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/neon-animation/animations/slide-from-top-animation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/neon-animation/neon-animation-behavior.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/neon-animation/neon-animation-runner-behavior.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/paper-button/paper-button.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/paper-card/paper-card.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/paper-drawer-panel/paper-drawer-panel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/paper-header-panel/paper-header-panel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/paper-tooltip/paper-tooltip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/polymer/polymer-mini.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/polymer/polymer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/bower_components/webcomponentsjs/webcomponents-lite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-404/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-404/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-404/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-404/estp-404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-404/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-404/test/estp-404_test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-abyss/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-abyss/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-abyss/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-abyss/estp-abyss.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-abyss/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-abyss/test/estp-abyss_test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-contacts/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-contacts/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-contacts/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-contacts/estp-contacts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-contacts/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-contacts/test/estp-contacts_test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-logo/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-logo/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-logo/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-logo/estp-logo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-logo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-logo/test/estp-logo_test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-organization/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-organization/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-organization/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-organization/estp-organization.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-organization/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-organization/test/estp-organization_test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-pages/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-pages/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-pages/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-pages/estp-pages.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-pages/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-pages/test/estp-pages_test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-person/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-person/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-person/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-person/estp-person.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-person/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-person/test/estp-person_test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-price/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-price/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-price/components/price-list/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-price/components/price-list/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-price/components/price-list/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-price/components/price-list/price-list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-price/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-price/estp-price.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-price/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-price/test/estp-price_test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-service/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-service/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-service/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-service/estp-service.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-service/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-service/test/estp-service_test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-specof/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-specof/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-specof/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-specof/estp-specof.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-specof/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp-specof/test/estp-specof_test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/estp3-app/estp3-app.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/local-images/Group.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/local-images/alert.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/local-images/li.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/firebase-app/public/src/shared-styles/shared-styles.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polymer-app/build/bundled/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polymer-app/build/bundled/bower_components/iron-flex-layout/iron-flex-layout-classes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polymer-app/build/bundled/bower_components/webcomponentsjs/webcomponents-lite.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polymer-app/build/bundled/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polymer-app/build/bundled/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polymer-app/build/unbundled/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polymer-app/build/unbundled/bower_components/iron-flex-layout/iron-flex-layout-classes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polymer-app/build/unbundled/bower_components/webcomponentsjs/webcomponents-lite.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polymer-app/build/unbundled/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polymer-app/build/unbundled/manifest.json" afterPath="" />
     </list>
     <ignored path="ESTP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -391,12 +499,12 @@
       <workItem from="1476986008666" duration="16297000" />
       <workItem from="1477195446880" duration="1540000" />
       <workItem from="1477233230279" duration="25066000" />
-      <workItem from="1478970077187" duration="48000" />
+      <workItem from="1478970077187" duration="151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64616000" />
+    <option name="totallyTimeSpent" value="64719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -697,25 +805,25 @@
         <state relative-caret-position="284">
           <caret line="27" column="188" selection-start-line="27" selection-start-column="188" selection-end-line="27" selection-end-column="188" />
           <folding>
-            <element signature="e#454#461#0#HTML" expanded="true" />
-            <element signature="e#467#473#0#HTML" expanded="true" />
-            <element signature="e#476#483#0#HTML" expanded="true" />
-            <element signature="e#516#522#0#HTML" expanded="true" />
-            <element signature="e#577#583#0#HTML" expanded="true" />
-            <element signature="e#671#677#0#HTML" expanded="true" />
-            <element signature="e#687#693#0#HTML" expanded="true" />
-            <element signature="e#800#807#0#HTML" expanded="true" />
-            <element signature="e#828#835#0#HTML" expanded="true" />
-            <element signature="e#854#860#0#HTML" expanded="true" />
-            <element signature="e#887#893#0#HTML" expanded="true" />
-            <element signature="e#908#914#0#HTML" expanded="true" />
-            <element signature="e#925#931#0#HTML" expanded="true" />
-            <element signature="e#943#949#0#HTML" expanded="true" />
-            <element signature="e#1013#1019#0#HTML" expanded="true" />
-            <element signature="e#1076#1083#0#HTML" expanded="true" />
-            <element signature="e#1096#1103#0#HTML" expanded="true" />
-            <element signature="e#1150#1156#0#HTML" expanded="true" />
-            <element signature="e#1177#1183#0#HTML" expanded="true" />
+            <element signature="e#454#461#0#HTML" expanded="false" />
+            <element signature="e#467#473#0#HTML" expanded="false" />
+            <element signature="e#476#483#0#HTML" expanded="false" />
+            <element signature="e#516#522#0#HTML" expanded="false" />
+            <element signature="e#577#583#0#HTML" expanded="false" />
+            <element signature="e#671#677#0#HTML" expanded="false" />
+            <element signature="e#687#693#0#HTML" expanded="false" />
+            <element signature="e#800#807#0#HTML" expanded="false" />
+            <element signature="e#828#835#0#HTML" expanded="false" />
+            <element signature="e#854#860#0#HTML" expanded="false" />
+            <element signature="e#887#893#0#HTML" expanded="false" />
+            <element signature="e#908#914#0#HTML" expanded="false" />
+            <element signature="e#925#931#0#HTML" expanded="false" />
+            <element signature="e#943#949#0#HTML" expanded="false" />
+            <element signature="e#1013#1019#0#HTML" expanded="false" />
+            <element signature="e#1076#1083#0#HTML" expanded="false" />
+            <element signature="e#1096#1103#0#HTML" expanded="false" />
+            <element signature="e#1150#1156#0#HTML" expanded="false" />
+            <element signature="e#1177#1183#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
