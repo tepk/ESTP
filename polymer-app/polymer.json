@@ -1,6 +1,6 @@
 {
   "entrypoint": "index.html",
-  "shell": "src/estp-app/estp-app.html",
+  "shell": "src/estp3-app/estp3-app.html",
   "fragments": [
 
   ],
