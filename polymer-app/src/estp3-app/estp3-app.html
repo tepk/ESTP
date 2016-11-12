@@ -1,8 +1,13 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
+<!--Shared elements-->
+<link rel="import" href="../../src/shared-styles/shared-styles.html">
+
 <!--App elements-->
 <link rel="import" href="../../bower_components/app-route/app-location.html">
 <link rel="import" href="../../bower_components/app-route/app-route.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
 
 <!--Estp elements-->
 <link rel="import" href="../../src/estp-logo/estp-logo.html">
@@ -18,12 +23,18 @@
 
 <!--Iron elements-->
 <link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
-<link rel="import" href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html">
 
 <!--UNUSED DIRECTLY-->
-<link rel="import" href="../../src/shared-styles/shared-styles.html">
+<link rel="import" href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html">
+<link rel="import" href="../../bower_components/paper-header-panel/paper-header-panel.html">
 <link rel="import" href="../../bower_components/paper-button/paper-button.html">
-
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
 <dom-module id="estp3-app">
     <template>
         <style>
@@ -33,9 +44,14 @@
                 position: relative;
                 padding-left: 73px;
                 box-sizing: border-box;
+
             }
             body {
                 overflow-y: scroll !important;
+            }
+
+            app-drawer-layout {
+                --app-drawer-width: 70px;
             }
             .copyright {
                 display: block;
@@ -45,15 +61,17 @@
                 text-align: center;
                 color: #5288ae;
             }
+
         </style>
         <style include="shared-styles"></style>
         <app-location route="{{route}}"></app-location>
         <app-route route="{{route}}" pattern="/:page" data="{{routeData}}" tail="{{tail}}">
         </app-route>
+
         <estp-logo id="logo"></estp-logo>
         <estp-pages id="pages">
             <h1>Единая Служба Технической Поддержки</h1>
-            <iron-pages selected="{{routeData.page}}" attr-for-selected="name" fallback-selection="404">
+            <iron-pages selected="{{routeData.page}}" attr-for-selected="name" fallback-selection="organization">
                 <estp-organization name="organization"></estp-organization>
                 <estp-person name="person"></estp-person>
                 <estp-price name="price"></estp-price>
@@ -64,8 +82,8 @@
                 <estp-404 name="404"></estp-404>
             </iron-pages>
         </estp-pages>
-        <span class="copyright">&copy; 2014&ndash;[[copyright]], Единая Служба Технической Поддержки</span>
-    </template>
+        <span class="copyright">© 2014–[[copyright]], Единая Служба Технической Поддержки</span>
+</template>
 
     <script>
         Polymer({
@@ -73,7 +91,6 @@
             is: 'estp3-app',
             ready: function (e, d) {
                 this.$.logo.animate()
-                console.log(this.routeData.page)
             },
             properties: {
                 copyright: {
@@ -83,7 +100,8 @@
                     }
                 },
 
-            }
+            },
+
         });
     </script>
 </dom-module>
