@@ -12,7 +12,7 @@
   "includeDependencies": [
     "manifest.json",
     "bower_components/iron-flex-layout/iron-flex-layout-classes.html",
-    "bower_components/webcomponentsjs/webcomponents-lite.min.js",
+    "bower_components/webcomponentsjs/webcomponents-lite.js",
     "local-images/li.gif"
   ]
 }
