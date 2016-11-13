@@ -75,8 +75,8 @@
       <file leaf-file-name="estp-logo.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-logo/estp-logo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            <state relative-caret-position="718">
+              <caret line="441" column="13" selection-start-line="441" selection-start-column="13" selection-end-line="441" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -477,12 +477,12 @@
       <workItem from="1477233230279" duration="25066000" />
       <workItem from="1478970077187" duration="701000" />
       <workItem from="1478972529161" duration="155000" />
-      <workItem from="1479014186031" duration="329000" />
+      <workItem from="1479014186031" duration="552000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65753000" />
+    <option name="totallyTimeSpent" value="65976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -820,8 +820,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/polymer-app/src/estp-logo/estp-logo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        <state relative-caret-position="718">
+          <caret line="441" column="13" selection-start-line="441" selection-start-column="13" selection-end-line="441" selection-end-column="13" />
           <folding />
         </state>
       </provider>
