@@ -1,13 +1,15 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
+<!--Iron elements-->
+<link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
+
 <!--Shared elements-->
 <link rel="import" href="../../src/shared-styles/shared-styles.html">
 
 <!--App elements-->
 <link rel="import" href="../../bower_components/app-route/app-location.html">
 <link rel="import" href="../../bower_components/app-route/app-route.html">
-<link rel="import" href="../../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
-<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
 
 <!--Estp elements-->
 <link rel="import" href="../../src/estp-logo/estp-logo.html">
@@ -21,13 +23,13 @@
 <link rel="import" href="../../src/estp-specof/estp-specof.html">
 <link rel="import" href="../../src/estp-404/estp-404.html">
 
-<!--Iron elements-->
-<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
-
 <!--UNUSED DIRECTLY-->
+<link rel="import" href="../../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
 <link rel="import" href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html">
 <link rel="import" href="../../bower_components/paper-header-panel/paper-header-panel.html">
 <link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<!--UNUSED DIRECTLY-->
 <!--UNUSED DIRECTLY-->
 <!--UNUSED DIRECTLY-->
 <!--UNUSED DIRECTLY-->
@@ -45,6 +47,10 @@
                 padding-left: 73px;
                 box-sizing: border-box;
 
+            }
+            [query-matches] {
+                display: block;
+                min-height: 97vh;
             }
             body {
                 overflow-y: scroll !important;
