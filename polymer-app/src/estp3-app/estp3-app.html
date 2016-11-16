@@ -1,15 +1,15 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
-<!--Iron elements-->
-<link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
-<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
-
 <!--Shared elements-->
 <link rel="import" href="../../src/shared-styles/shared-styles.html">
 
 <!--App elements-->
 <link rel="import" href="../../bower_components/app-route/app-location.html">
 <link rel="import" href="../../bower_components/app-route/app-route.html">
+
+<!--Iron elements-->
+<link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
 
 <!--Estp elements-->
 <link rel="import" href="../../src/estp-logo/estp-logo.html">
@@ -21,6 +21,7 @@
 <link rel="import" href="../../src/estp-abyss/estp-abyss.html">
 <link rel="import" href="../../src/estp-contacts/estp-contacts.html">
 <link rel="import" href="../../src/estp-specof/estp-specof.html">
+<link rel="import" href="../../src/estp-mobile-logo/estp-mobile-logo.html">
 <link rel="import" href="../../src/estp-404/estp-404.html">
 <dom-module id="estp3-app">
     <template>
@@ -58,9 +59,10 @@
         <app-location route="{{route}}"></app-location>
         <app-route route="{{route}}" pattern="/:page" data="{{routeData}}" tail="{{tail}}">
         </app-route>
-        <iron-media-query query="(min-width: 600px)" query-matches="{{queryMatches}}"></iron-media-query>
+        <iron-media-query query="[[minWidth]]" query-matches="{{queryMatches}}"></iron-media-query>
         <estp-logo id="logo" hidden$="[[!queryMatches]]"></estp-logo>
         <estp-pages id="pages">
+            <estp-mobile-logo hidden$="[[queryMatches]]"></estp-mobile-logo>
             <h1 hidden$="[[!queryMatches]]">Единая Служба Технической Поддержки</h1>
             <iron-pages selected="{{routeData.page}}" attr-for-selected="name" fallback-selection="organization">
                 <estp-organization name="organization"></estp-organization>
@@ -70,6 +72,7 @@
                 <estp-abyss name="abyss"></estp-abyss>
                 <estp-contacts name="contacts"></estp-contacts>
                 <estp-specof name="special-offer"></estp-specof>
+                <estp-mobile-logo name="mobile-logo"></estp-mobile-logo>
                 <estp-404 name="404"></estp-404>
             </iron-pages>
         </estp-pages>
@@ -90,6 +93,10 @@
                         return new Date().getFullYear();
                     }
                 },
+                minWidth: {
+                    type: String,
+                    value: "(min-width: 601px)"
+                },
                 queryMatches: {
                     type: Boolean
                 },
@@ -101,9 +108,9 @@
             __currentResolution: function (query) {
                 if (!query) {
                     this.customStyle['--orientatinon-padding'] = '0',
-                    this.customStyle['--text-padding'] = '5px',
-                    this.customStyle['--font-size'] = '0.85em'
-                    this.customStyle['--card-padding'] = '15px 10px 20px 15px'
+                            this.customStyle['--text-padding'] = '5px',
+                            this.customStyle['--font-size'] = '0.85em'
+                    this.customStyle['--card-padding'] = '15px 37px 20px 15px'
                     this.updateStyles()
                 } else {
                     this.customStyle['--orientatinon-padding'] = '73px',

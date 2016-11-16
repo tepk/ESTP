@@ -1,0 +1,92 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+
+<!--
+`estp-mobile-logo`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="estp-mobile-logo">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+
+            paper-card {
+
+                display: table;
+                text-align: center;
+                overflow: hidden;
+                font-family: sans-serif;
+                background-color: #0b97c4;
+            }
+
+            #pc1 {
+                position: absolute;
+                top: 3px;
+                right: 20px;
+                width: 16px;
+                height: 16px;
+            }
+
+            #pc2 {
+                position: absolute;
+                top: 3px;
+                right: 3px;
+                width: 16px;
+                height: 16px;
+            }
+
+            #pc3 {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 16px;
+                height: 16px;
+            }
+
+            #pc4 {
+                position: absolute;
+                top: 20px;
+                right: 3px;
+                width: 16px;
+                height: 16px;
+            }
+
+            #letter1, #letter2, #letter3, #letter4 {
+                font-weight: normal;
+            }
+
+            span {
+                display: table-cell;
+                vertical-align: middle;
+                color: #ffffff;
+                font-size: 0.7rem;
+            }
+        </style>
+        <a href="/">
+            <paper-card id="pc1"><span id="letter1">Е</span></paper-card>
+            <paper-card id="pc2"><span id="letter2">С</span></paper-card>
+            <paper-card id="pc3"><span id="letter3">Т</span></paper-card>
+            <paper-card id="pc4"><span id="letter4">П</span></paper-card>
+        </a>
+    </template>
+
+    <script>
+        Polymer({
+
+            is: 'estp-mobile-logo',
+
+            properties: {
+                prop1: {
+                    type: String,
+                    value: 'estp-mobile-logo',
+                },
+            },
+
+        });
+    </script>
+</dom-module>
