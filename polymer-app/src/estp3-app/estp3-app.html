@@ -32,6 +32,8 @@
                 --text-padding: 25px;
                 --font-size: 1em;
                 --card-padding: 30px 20px 40px 30px;
+                --price-margin: 20px;
+                --price-width: 140px;
                 font-size: var(--font-size);
                 display: block;
                 width: 100%;
@@ -110,13 +112,17 @@
                     this.customStyle['--orientatinon-padding'] = '0',
                             this.customStyle['--text-padding'] = '5px',
                             this.customStyle['--font-size'] = '0.85em'
-                    this.customStyle['--card-padding'] = '15px 37px 20px 15px'
+                    this.customStyle['--card-padding'] = '15px 10px 20px 15px'
+                    this.customStyle['--price-margin'] = '0'
+                    this.customStyle['--price-width'] = '90px'
                     this.updateStyles()
                 } else {
                     this.customStyle['--orientatinon-padding'] = '73px',
                             this.customStyle['--text-padding'] = '25px',
                             this.customStyle['--font-size'] = '1em'
                     this.customStyle['--card-padding'] = '30px 20px 40px 30px'
+                    this.customStyle['--price-margin'] = '30px'
+                    this.customStyle['--price-width'] = '140px'
                     this.updateStyles()
                 }
             }
