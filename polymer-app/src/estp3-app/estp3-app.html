@@ -26,24 +26,24 @@
     <template>
         <style>
             :host {
+
+                --orientatinon-padding: 73px;
+                --text-padding: 25px;
+                --font-size: 1em;
+                --card-padding: 30px 20px 40px 30px;
+                font-size: var(--font-size);
                 display: block;
                 width: 100%;
                 position: relative;
-                padding-left: 73px;
+                padding-left: var(--orientatinon-padding);
                 box-sizing: border-box;
 
             }
-            [query-matches] {
-                display: block;
-                min-height: 97vh;
-            }
+
             body {
                 overflow-y: scroll !important;
             }
 
-            app-drawer-layout {
-                --app-drawer-width: 70px;
-            }
             .copyright {
                 display: block;
                 font-size: 0.8em;
@@ -58,10 +58,10 @@
         <app-location route="{{route}}"></app-location>
         <app-route route="{{route}}" pattern="/:page" data="{{routeData}}" tail="{{tail}}">
         </app-route>
-
-        <estp-logo id="logo"></estp-logo>
+        <iron-media-query query="(min-width: 600px)" query-matches="{{queryMatches}}"></iron-media-query>
+        <estp-logo id="logo" hidden$="[[!queryMatches]]"></estp-logo>
         <estp-pages id="pages">
-            <h1>Единая Служба Технической Поддержки</h1>
+            <h1 hidden$="[[!queryMatches]]">Единая Служба Технической Поддержки</h1>
             <iron-pages selected="{{routeData.page}}" attr-for-selected="name" fallback-selection="organization">
                 <estp-organization name="organization"></estp-organization>
                 <estp-person name="person"></estp-person>
@@ -74,7 +74,7 @@
             </iron-pages>
         </estp-pages>
         <span class="copyright">© 2014–[[copyright]], Единая Служба Технической Поддержки</span>
-</template>
+    </template>
 
     <script>
         Polymer({
@@ -90,8 +90,29 @@
                         return new Date().getFullYear();
                     }
                 },
+                queryMatches: {
+                    type: Boolean
+                },
 
             },
+            observers: [
+                '__currentResolution(queryMatches)'
+            ],
+            __currentResolution: function (query) {
+                if (!query) {
+                    this.customStyle['--orientatinon-padding'] = '0',
+                    this.customStyle['--text-padding'] = '5px',
+                    this.customStyle['--font-size'] = '0.85em'
+                    this.customStyle['--card-padding'] = '15px 10px 20px 15px'
+                    this.updateStyles()
+                } else {
+                    this.customStyle['--orientatinon-padding'] = '73px',
+                            this.customStyle['--text-padding'] = '25px',
+                            this.customStyle['--font-size'] = '1em'
+                    this.customStyle['--card-padding'] = '30px 20px 40px 30px'
+                    this.updateStyles()
+                }
+            }
 
         });
     </script>
