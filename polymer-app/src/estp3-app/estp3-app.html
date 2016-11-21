@@ -23,6 +23,9 @@
 <link rel="import" href="../../src/estp-specof/estp-specof.html">
 <link rel="import" href="../../src/estp-mobile-logo/estp-mobile-logo.html">
 <link rel="import" href="../../src/estp-404/estp-404.html">
+
+<!--UNUSED DIRECTLY-->
+<link rel="import" href="../../src/behaviours/lazy-pages-behaviour.html">
 <dom-module id="estp3-app">
     <template>
         <style>
@@ -64,7 +67,6 @@
         <iron-media-query query="[[minWidth]]" query-matches="{{queryMatches}}"></iron-media-query>
         <estp-logo id="logo" hidden$="[[!queryMatches]]"></estp-logo>
         <estp-pages id="pages">
-            <estp-mobile-logo hidden$="[[queryMatches]]"></estp-mobile-logo>
             <h1 hidden$="[[!queryMatches]]">Единая Служба Технической Поддержки</h1>
             <iron-pages selected="{{routeData.page}}" attr-for-selected="name" fallback-selection="organization">
                 <estp-organization name="organization"></estp-organization>
@@ -88,6 +90,9 @@
             ready: function (e, d) {
                 this.$.logo.animate()
             },
+            behaviors: [
+                EstpBehaviors.LazyPagesBehavior
+            ],
             properties: {
                 copyright: {
                     type: Date,

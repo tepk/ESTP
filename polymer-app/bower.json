@@ -12,7 +12,8 @@
     "iron-pages": "PolymerElements/iron-pages#^1.0.8",
     "paper-drawer-panel": "PolymerElements/paper-drawer-panel#^1.0.10",
     "paper-input": "PolymerElements/paper-input#^1.1.20",
-    "app-layout": "PolymerElements/app-layout#^0.10.5"
+    "app-layout": "PolymerElements/app-layout#^0.10.5",
+    "paper-fab": "PolymerElements/paper-fab#^1.2.1"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
