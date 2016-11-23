@@ -6,6 +6,10 @@
 <!--App elements-->
 <link rel="import" href="../../bower_components/app-route/app-location.html">
 <link rel="import" href="../../bower_components/app-route/app-route.html">
+<link rel="import" href="../../bower_components/app-layout/app-scroll-effects/effects/waterfall.html">
+<link rel="import" href="../../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
 
 <!--Iron elements-->
 <link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
@@ -26,6 +30,8 @@
 
 <!--UNUSED DIRECTLY-->
 <link rel="import" href="../../src/behaviours/lazy-pages-behaviour.html">
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
 <dom-module id="estp3-app">
     <template>
         <style>
@@ -58,6 +64,17 @@
                 text-align: center;
                 color: #5288ae;
             }
+            .mobile {
+                background-color: #5288ae;
+                margin: 0;
+                padding: 0;
+
+            }
+            .mobile h2 {
+                color: #ffffff;
+                font-size: 0.9em;
+
+            }
 
         </style>
         <style include="shared-styles"></style>
@@ -66,9 +83,17 @@
         </app-route>
         <iron-media-query query="[[minWidth]]" query-matches="{{queryMatches}}"></iron-media-query>
         <estp-logo id="logo" hidden$="[[!queryMatches]]"></estp-logo>
+        <app-header fixed condenses effects="waterfall" hidden$="[[queryMatches]]" class="mobile">
+            <app-toolbar>
+                <h2>[[currentPage]]</h2>
+            </app-toolbar>
+        </app-header>
+        
+
         <estp-pages id="pages">
             <h1 hidden$="[[!queryMatches]]">Единая Служба Технической Поддержки</h1>
-            <iron-pages selected="{{routeData.page}}" attr-for-selected="name" fallback-selection="organization">
+            <h2 hidden$="[[!queryMatches]]">[[currentPage]]</h2>
+            <iron-pages selected="{{routeData.page}}" attr-for-selected="name" selected-attribute="active" fallback-selection="organization">
                 <estp-organization name="organization"></estp-organization>
                 <estp-person name="person"></estp-person>
                 <estp-price name="price"></estp-price>
@@ -89,6 +114,8 @@
             is: 'estp3-app',
             ready: function (e, d) {
                 this.$.logo.animate()
+                var titleObject = {'organization': 'Для юридических лиц', 'person': 'Для физических лиц'}
+
             },
             behaviors: [
                 EstpBehaviors.LazyPagesBehavior
@@ -106,12 +133,32 @@
                 },
                 queryMatches: {
                     type: Boolean
+                },currentPage: {
+                    type: String,
+                    computed: '__routePageChanged(routeData.page)'
                 },
+
+
 
             },
             observers: [
                 '__currentResolution(queryMatches)'
             ],
+            __routePageChanged: function(name) {
+                var titleObject = {
+                    organization: 'Для юридических лиц',
+                    person: 'Для физических лиц',
+                    price: 'Стоимость услуг',
+                    service: 'Сервисный центр',
+                    abyss: 'Вопросы и ответы',
+                    contacts: 'Контактная информация',
+                    'special-offer': 'Специальные предложения'
+                }
+                return titleObject[name];
+            },
+
+
+
             __currentResolution: function (query) {
                 if (!query) {
                     this.customStyle['--orientatinon-padding'] = '0',
@@ -130,7 +177,8 @@
                     this.customStyle['--price-width'] = '140px'
                     this.updateStyles()
                 }
-            }
+            },
+
 
         });
     </script>
