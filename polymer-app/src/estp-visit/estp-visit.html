@@ -1,0 +1,137 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../src/shared-styles/shared-styles.html">
+
+<!--Paper elements-->
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+
+<!--Iron elements-->
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../bower_components/iron-icons/notification-icons.html">
+<link rel="import" href="../../bower_components/iron-icons/communication-icons.html">
+<!--UNUSED DIRECTLY-->
+<!--
+`estp-visit`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="estp-visit">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+
+            paper-card {
+                width: 900px;
+                height: 500px;
+            }
+
+            .logo {
+
+                display: table;
+                text-align: center;
+                overflow: hidden;
+                font-family: sans-serif;
+                background-color: #0b97c4;
+            }
+
+            #pc1 {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                width: 64px;
+                height: 64px;
+            }
+
+            #pc2 {
+                position: absolute;
+                top: 15px;
+                left: 82px;
+                width: 64px;
+                height: 64px;
+            }
+
+            #pc3 {
+                position: absolute;
+                top: 82px;
+                left: 15px;
+                width: 64px;
+                height: 64px;
+            }
+
+            #pc4 {
+                position: absolute;
+                top: 82px;
+                left: 82px;
+                width: 64px;
+                height: 64px;
+            }
+            #letter1, #letter2, #letter3, #letter4 {
+                font-weight: bold;
+            }
+
+            .logo-text {
+                display: table-cell;
+                vertical-align: middle;
+                color: #ffffff;
+                font-size: 2.8rem;
+            }
+
+            #outComming {
+                position: absolute;
+                bottom: -10px;
+                right: 30px;
+                font-size: 1.8rem;
+
+            }
+
+            #workingProcess {
+                position: absolute;
+                bottom: -10px;
+                left: -25px;
+                width: 28em;
+                font-size: 1.5rem;
+            }
+
+        </style>
+        <style include="shared-styles"></style>
+        <paper-card elevation="1">
+            <paper-card class="logo" id="pc1"><span id="letter1" class="logo-text">Е</span></paper-card>
+            <paper-card class="logo" id="pc2"><span id="letter2" class="logo-text">С</span></paper-card>
+            <paper-card class="logo" id="pc3"><span id="letter3" class="logo-text">Т</span></paper-card>
+            <paper-card class="logo" id="pc4"><span id="letter4" class="logo-text">П</span></paper-card>
+            <hr style="position: absolute; width: 98%; bottom: 200px; left: 1%;">
+            <div id="outComming">
+                <p>
+                    <iron-icon icon="language" style="color: #00b0ff;"></iron-icon><span> www.estp-nsk.ru</span> <br>
+                    <iron-icon icon="schedule" style="color: #c592c9;"></iron-icon><span> 8:00–20:00</span> <br>
+                    <iron-icon icon="notification:phone-in-talk" style="color: #18b117;"></iron-icon><span> (383) 281-98-94</span> <br>
+                    <iron-icon icon="notification:phone-forwarded" style="color: #ff5e0e;"></iron-icon><span> (383) 287-98-94</span> <br>
+                    <iron-icon icon="communication:mail-outline" style="color: #c9c3c5;"></iron-icon><span> office@estp-nsk.ru</span>
+                </p>
+            </div>
+            <div id="workingProcess">
+                <ul>
+                    <li>Бесплатный выезд и диагностика;</li>
+                    <li>Ремонт и обслуживание ПК;</li>
+                    <li>Установка и настройка ПО, чистка вирусов;</li>
+                    <li>Монтаж и настройка локальной сети;</li>
+                    <li>Официальная работа с юридическими лицами<br /> по договору обслуживания.</li>
+                </ul>
+            </div>
+        </paper-card>
+
+    </template>
+
+    <script>
+        Polymer({
+
+            is: 'estp-visit',
+
+
+        });
+    </script>
+</dom-module>

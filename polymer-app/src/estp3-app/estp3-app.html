@@ -9,7 +9,6 @@
 <link rel="import" href="../../bower_components/app-layout/app-scroll-effects/effects/waterfall.html">
 <link rel="import" href="../../bower_components/app-layout/app-header/app-header.html">
 <link rel="import" href="../../bower_components/app-layout/app-toolbar/app-toolbar.html">
-<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
 
 <!--Iron elements-->
 <link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
@@ -27,9 +26,12 @@
 <link rel="import" href="../../src/estp-specof/estp-specof.html">
 <link rel="import" href="../../src/estp-mobile-logo/estp-mobile-logo.html">
 <link rel="import" href="../../src/estp-404/estp-404.html">
+<link rel="import" href="../../src/estp-visit/estp-visit.html">
 
 <!--UNUSED DIRECTLY-->
+<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
 <link rel="import" href="../../src/behaviours/lazy-pages-behaviour.html">
+<!--UNUSED DIRECTLY-->
 <!--UNUSED DIRECTLY-->
 <!--UNUSED DIRECTLY-->
 <dom-module id="estp3-app">
@@ -88,12 +90,12 @@
                 <h2>[[currentPage]]</h2>
             </app-toolbar>
         </app-header>
-        
+
 
         <estp-pages id="pages">
             <h1 hidden$="[[!queryMatches]]">Единая Служба Технической Поддержки</h1>
             <h2 hidden$="[[!queryMatches]]">[[currentPage]]</h2>
-            <iron-pages selected="{{routeData.page}}" attr-for-selected="name" selected-attribute="active" fallback-selection="organization">
+            <iron-pages selected="{{routeData.page}}" attr-for-selected="name" fallback-selection="organization">
                 <estp-organization name="organization"></estp-organization>
                 <estp-person name="person"></estp-person>
                 <estp-price name="price"></estp-price>
@@ -103,6 +105,7 @@
                 <estp-specof name="special-offer"></estp-specof>
                 <estp-mobile-logo name="mobile-logo"></estp-mobile-logo>
                 <estp-404 name="404"></estp-404>
+                <estp-visit name="visit"></estp-visit>
             </iron-pages>
         </estp-pages>
         <span class="copyright">© 2014–[[copyright]], Единая Служба Технической Поддержки</span>
