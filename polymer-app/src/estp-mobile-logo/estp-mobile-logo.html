@@ -2,14 +2,13 @@
 
 <!--Paper elements-->
 <link rel="import" href="../../bower_components/paper-card/paper-card.html">
-<link rel="import" href="../../bower_components/paper-fab/paper-fab.html">
-
-<!--Iron elements-->
-<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
 
 <!--UNUSED DIRECTLY-->
+<link rel="import" href="../../bower_components/paper-fab/paper-fab.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../../bower_components/iron-icons/image-icons.html">
+<!--UNUSED DIRECTLY-->
 <!--UNUSED DIRECTLY-->
 <!--UNUSED DIRECTLY-->
 <!--UNUSED DIRECTLY-->
@@ -26,7 +25,10 @@
             :host {
                 display: block;
             }
-
+            iron-icon {
+                --iron-icon-width:	16px;
+                --iron-icon-height: 16px;
+            }
             paper-card {
 
                 display: table;
@@ -39,52 +41,82 @@
             #pc1 {
                 position: absolute;
                 top: 3px;
-                right: 20px;
-                width: 16px;
-                height: 16px;
+                left: 110px;
+                width: 17px;
+                height: 17px;
             }
 
             #pc2 {
                 position: absolute;
                 top: 3px;
-                right: 3px;
-                width: 16px;
-                height: 16px;
+                left: 128px;
+                width: 17px;
+                height: 17px;
             }
 
             #pc3 {
                 position: absolute;
-                top: 20px;
-                right: 20px;
-                width: 16px;
-                height: 16px;
+                top: 21px;
+                left: 110px;
+                width: 17px;
+                height: 17px;
             }
 
             #pc4 {
                 position: absolute;
-                top: 20px;
-                right: 3px;
-                width: 16px;
-                height: 16px;
+                top: 21px;
+                left: 128px;
+                width: 17px;
+                height: 17px;
             }
 
             #letter1, #letter2, #letter3, #letter4 {
                 font-weight: normal;
             }
 
-            span {
+            span.letters {
                 display: table-cell;
                 vertical-align: middle;
                 color: #ffffff;
                 font-size: 0.7rem;
             }
+            paper-menu {
+                padding-top: 64px;
+            }
+            paper-menu div {
+                width: 100%;
+                height: 36px;
+                vertical-align: middle;
+                line-height: 36px;
+                margin-top: 3px;
+                margin-bottom: 3px;
+            }
+
+            .icons {
+                width: 34px;
+                margin-left: 3px;
+                color: #ffffff;
+                float: left;
+                margin-right: 3px;
+            }
+
+
         </style>
-        <a href="/">
-            <paper-card id="pc1"><span id="letter1">Е</span></paper-card>
-            <paper-card id="pc2"><span id="letter2">С</span></paper-card>
-            <paper-card id="pc3"><span id="letter3">Т</span></paper-card>
-            <paper-card id="pc4"><span id="letter4">П</span></paper-card>
-        </a>
+        <div style="position: relative;">
+            <paper-card id="pc1"><span id="letter1" class="letters">Е</span></paper-card>
+            <paper-card id="pc2"><span id="letter2" class="letters">С</span></paper-card>
+            <paper-card id="pc3"><span id="letter3" class="letters">Т</span></paper-card>
+            <paper-card id="pc4"><span id="letter4" class="letters">П</span></paper-card>
+        </div>
+        <paper-menu>
+            <div><paper-card class="icons"><iron-icon icon="social:group"></iron-icon></paper-card>Юридическим лицам</div>
+            <div><paper-card class="icons"><iron-icon icon="social:person"></iron-icon></paper-card>Физическим лицам</div>
+            <div><paper-card class="icons"><iron-icon icon="editor:insert-drive-file"></iron-icon></paper-card>Стоимость услуг</div>
+            <div><paper-card class="icons"><iron-icon icon="settings"></iron-icon></paper-card>Сервисный центр</div>
+            <div><paper-card class="icons"><iron-icon icon="help-outline"></iron-icon></paper-card>Вопросы и ответы</div>
+            <div><paper-card class="icons"><iron-icon icon="communication:call"></iron-icon></paper-card>Контактная информация</div>
+            <div><paper-card class="icons"><span>%</span></paper-card>Специальные предложения</div>
+        </paper-menu>
     </template>
 
     <script>

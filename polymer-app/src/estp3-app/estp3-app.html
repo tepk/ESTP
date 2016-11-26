@@ -9,9 +9,12 @@
 <link rel="import" href="../../bower_components/app-layout/app-scroll-effects/effects/waterfall.html">
 <link rel="import" href="../../bower_components/app-layout/app-header/app-header.html">
 <link rel="import" href="../../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
 
 <!--Iron elements-->
 <link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
 
 <!--Estp elements-->
@@ -28,12 +31,12 @@
 <link rel="import" href="../../src/estp-404/estp-404.html">
 <link rel="import" href="../../src/estp-visit/estp-visit.html">
 
+<!--Paper elements-->
+<link rel="import" href="../../bower_components/paper-menu/paper-menu.html">
+
 <!--UNUSED DIRECTLY-->
-<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
 <link rel="import" href="../../src/behaviours/lazy-pages-behaviour.html">
-<!--UNUSED DIRECTLY-->
-<!--UNUSED DIRECTLY-->
-<!--UNUSED DIRECTLY-->
+
 <dom-module id="estp3-app">
     <template>
         <style>
@@ -54,8 +57,16 @@
 
             }
 
+            app-drawer {
+                --app-drawer-content-container: {
+                    overflow-y: auto;
+                }
+            }
+
+
             body {
                 overflow-y: scroll !important;
+
             }
 
             .copyright {
@@ -66,17 +77,26 @@
                 text-align: center;
                 color: #5288ae;
             }
+
             .mobile {
                 background-color: #5288ae;
                 margin: 0;
                 padding: 0;
 
             }
+
             .mobile h2 {
                 color: #ffffff;
                 font-size: 0.9em;
 
             }
+
+            #mobileMenu ul {
+                padding-top: 60px;
+            }
+
+
+
 
         </style>
         <style include="shared-styles"></style>
@@ -85,8 +105,10 @@
         </app-route>
         <iron-media-query query="[[minWidth]]" query-matches="{{queryMatches}}"></iron-media-query>
         <estp-logo id="logo" hidden$="[[!queryMatches]]"></estp-logo>
+
         <app-header fixed condenses effects="waterfall" hidden$="[[queryMatches]]" class="mobile">
             <app-toolbar>
+                <iron-icon icon="menu" on-tap="__menuTap" style="color: #ffffff; margin-right: 10px; margin-left: -5px;"></iron-icon>
                 <h2>[[currentPage]]</h2>
             </app-toolbar>
         </app-header>
@@ -105,10 +127,16 @@
                 <estp-specof name="special-offer"></estp-specof>
                 <estp-mobile-logo name="mobile-logo"></estp-mobile-logo>
                 <estp-404 name="404"></estp-404>
-                <estp-visit name="visit"></estp-visit>
+                <estp-visit></estp-visit>
             </iron-pages>
         </estp-pages>
         <span class="copyright">© 2014–[[copyright]], Единая Служба Технической Поддержки</span>
+        <app-drawer id="drawer" on-tap="__drawerToggle">
+            <div id="mobileMenu">
+                <estp-mobile-logo></estp-mobile-logo>
+
+            </div>
+        </app-drawer>
     </template>
 
     <script>
@@ -136,18 +164,17 @@
                 },
                 queryMatches: {
                     type: Boolean
-                },currentPage: {
+                }, currentPage: {
                     type: String,
                     computed: '__routePageChanged(routeData.page)'
                 },
-
 
 
             },
             observers: [
                 '__currentResolution(queryMatches)'
             ],
-            __routePageChanged: function(name) {
+            __routePageChanged: function (name) {
                 var titleObject = {
                     organization: 'Для юридических лиц',
                     person: 'Для физических лиц',
@@ -160,6 +187,14 @@
                 return titleObject[name];
             },
 
+            __menuTap: function (e, t) {
+                console.log(t)
+                this.$.drawer.toggle();
+            },
+
+            __drawerToggle: function(){
+                this.$.drawer.toggle();
+            },
 
 
             __currentResolution: function (query) {
