@@ -25,6 +25,12 @@
             :host {
                 display: block;
             }
+            a {
+                color: #000000;
+                text-decoration: none;
+
+            }
+
             iron-icon {
                 --iron-icon-width:	16px;
                 --iron-icon-height: 16px;
@@ -74,6 +80,10 @@
                 font-weight: normal;
             }
 
+            #specOff {
+                background-color: #FF4792;
+            }
+
             span.letters {
                 display: table-cell;
                 vertical-align: middle;
@@ -102,6 +112,9 @@
 
 
         </style>
+        <app-location route="{{route}}"></app-location>
+        <app-route route="{{route}}" pattern="/:page" data="{{routeData}}" tail="{{tail}}">
+        </app-route>
         <div style="position: relative;">
             <paper-card id="pc1"><span id="letter1" class="letters">Е</span></paper-card>
             <paper-card id="pc2"><span id="letter2" class="letters">С</span></paper-card>
@@ -109,13 +122,41 @@
             <paper-card id="pc4"><span id="letter4" class="letters">П</span></paper-card>
         </div>
         <paper-menu>
-            <div><paper-card class="icons"><iron-icon icon="social:group"></iron-icon></paper-card>Юридическим лицам</div>
-            <div><paper-card class="icons"><iron-icon icon="social:person"></iron-icon></paper-card>Физическим лицам</div>
-            <div><paper-card class="icons"><iron-icon icon="editor:insert-drive-file"></iron-icon></paper-card>Стоимость услуг</div>
-            <div><paper-card class="icons"><iron-icon icon="settings"></iron-icon></paper-card>Сервисный центр</div>
-            <div><paper-card class="icons"><iron-icon icon="help-outline"></iron-icon></paper-card>Вопросы и ответы</div>
-            <div><paper-card class="icons"><iron-icon icon="communication:call"></iron-icon></paper-card>Контактная информация</div>
-            <div><paper-card class="icons"><span>%</span></paper-card>Специальные предложения</div>
+            <div>
+                <a href="[[__computeHref(routeData.page,'organization')]]" on-tap="__closeDrawer">
+                    <paper-card class="icons"><iron-icon icon="social:group"></iron-icon></paper-card>Юридическим лицам
+                </a>
+            </div>
+            <div>
+                <a href="[[__computeHref(routeData.page,'person')]]" on-tap="__closeDrawer">
+                <paper-card class="icons"><iron-icon icon="social:person"></iron-icon></paper-card>Физическим лицам
+                </a>
+            </div>
+            <div>
+                <a href="[[__computeHref(routeData.page,'price')]]" on-tap="__closeDrawer">
+                <paper-card class="icons"><iron-icon icon="editor:insert-drive-file"></iron-icon></paper-card>Стоимость услуг
+                </a>
+            </div>
+            <div>
+                <a href="[[__computeHref(routeData.page,'service')]]" on-tap="__closeDrawer">
+                <paper-card class="icons"><iron-icon icon="settings"></iron-icon></paper-card>Сервисный центр
+                </a>
+            </div>
+            <div>
+                <a href="[[__computeHref(routeData.page,'abyss')]]" on-tap="__closeDrawer">
+                <paper-card class="icons"><iron-icon icon="help-outline"></iron-icon></paper-card>Вопросы и ответы
+                </a>
+            </div>
+            <div>
+                <a href="[[__computeHref(routeData.page,'contacts')]]" on-tap="__closeDrawer">
+                <paper-card class="icons"><iron-icon icon="communication:call"></iron-icon></paper-card>Контактная информация
+                </a>
+            </div>
+            <div>
+                <a href="[[__computeHref(routeData.page,'special-offer')]]" on-tap="__closeDrawer">
+                <paper-card class="icons" id="specOff"><span>%</span></paper-card>Специальные предложения
+                </a>
+            </div>
         </paper-menu>
     </template>
 
@@ -124,12 +165,18 @@
 
             is: 'estp-mobile-logo',
 
-            properties: {
-                prop1: {
-                    type: String,
-                    value: 'estp-mobile-logo',
-                },
+
+            __computeHref: function (page, uri) {
+                if (page === uri) {
+                    return ''
+                } else {
+                    return '/' + uri
+                }
             },
+
+            __closeDrawer: function() {
+                this.fire('closeDrawer')
+            }
 
         });
     </script>

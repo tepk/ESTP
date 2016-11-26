@@ -151,6 +151,11 @@
             behaviors: [
                 EstpBehaviors.LazyPagesBehavior
             ],
+            listeners: {
+                // 'scrim.tap': '__onScrimTap'
+                'tap': '__onScrimTap',
+                'closeDrawer': '__closeDrawer'
+            },
             properties: {
                 copyright: {
                     type: Date,
@@ -188,14 +193,24 @@
             },
 
             __menuTap: function (e, t) {
-                console.log(t)
                 this.$.drawer.toggle();
             },
 
             __drawerToggle: function(){
                 this.$.drawer.toggle();
+
+            },
+            __closeDrawer: function() {
+                this.$.drawer.toggle();
             },
 
+            __onScrimTap: function(e) {
+                console.log(e)
+                if ((e.target) && (e.target.id === 'scrim')) {
+                    this.$.drawer.toggle();
+                }
+
+            },
 
             __currentResolution: function (query) {
                 if (!query) {
