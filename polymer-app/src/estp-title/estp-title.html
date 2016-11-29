@@ -1,0 +1,36 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<!--UNUSED DIRECTLY-->
+<link rel="import" href="../polymer/polymer.html">
+<!--
+`estp-title`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="estp-title">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <title>[[name]]</title>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'estp-title',
+
+      properties: {
+        name: {
+          type: String,
+          value: 'Единая Служба Технической Поддержки',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
