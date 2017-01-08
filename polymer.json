@@ -1,0 +1,17 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/estp3-app/estp3-app.html",
+  "fragments": [
+
+  ],
+  "sourceGlobs": [
+    "img/**/*",
+    "libs/**/*",
+    "bower.json"
+  ],
+  "includeDependencies": [
+    "manifest.json",
+    "bower_components/iron-flex-layout/iron-flex-layout-classes.html",
+    "bower_components/webcomponentsjs/webcomponents-lite.js"
+  ]
+}

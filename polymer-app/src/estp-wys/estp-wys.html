@@ -1,0 +1,69 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<!--Paper elements-->
+<link rel="import" href="../../bower_components/paper-input/paper-textarea.html">
+<!--
+`estp-wys`
+
+
+@demo demo/index.html
+-->
+
+<dom-module id="estp-wys">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+
+        <form id="blogPost">
+            <paper-textarea id="wysInput" value="{{estp-wys}}"></paper-textarea>
+            <input type="submit" value="submit">
+        </form>
+        <br>
+        <br>
+        <div style="white-space: pre-wrap">{{estp-wys}}</div>
+    </template>
+    <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB8yfv9ZCPQcKkKicYWAHEuOp6KdJVcCak",
+            authDomain: "estp-299e2.firebaseapp.com",
+            databaseURL: "https://estp-299e2.firebaseio.com",
+            storageBucket: "estp-299e2.appspot.com",
+            messagingSenderId: "251141705487"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        Polymer({
+
+            is: 'estp-wys',
+            ready: function () {
+                var database = firebase.database();
+            },
+            properties: {
+                prop1: {
+                    type: String,
+                    value: 'estp-wys',
+                },
+            },
+            listeners: {
+                'submit': '__onFormSubmit'
+            },
+            __onFormSubmit: function (e) {
+                e.preventDefault();
+                var t = new Date().getTime();
+                console.log(this.$.blogPost)
+                firebase.database().ref('blog').push({
+                    article: this.$.wysInput.value
+                })
+                this.$.blogPost.reset()
+
+            }
+
+        });
+    </script>
+</dom-module>
