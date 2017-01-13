@@ -14,7 +14,8 @@
     "paper-input": "PolymerElements/paper-input#^1.1.20",
     "app-layout": "PolymerElements/app-layout#^0.10.5",
     "paper-fab": "PolymerElements/paper-fab#^1.2.1",
-    "paper-menu": "PolymerElements/paper-menu#^1.2.2"
+    "paper-menu": "PolymerElements/paper-menu#^1.2.2",
+    "polymerfire": "firebase/polymerfire#^0.10.3"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",

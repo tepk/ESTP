@@ -1,0 +1,92 @@
+<link rel="import" href="../../../../bower_components/polymer/polymer.html">
+
+<!--Shared elements-->
+<link rel="import" href="../../../../src/shared-styles/xbbcode.html">
+<link rel="import" href="../../../../src/shared-styles/shared-styles.html">
+<!--UNUSED DIRECTLY-->
+<!--
+`estp-article`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="estp-article">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+
+            paper-material {
+                padding-top: 2px;
+                padding-right: 20px;
+                padding-bottom: 15px;
+                padding-left: 20px;
+                margin-top: 5px;
+
+            }
+            h4 {
+                color: red !important;
+            }
+
+        </style>
+        <style include="xbbcode"></style>
+        <style include="shared-styles"></style>
+        <paper-material elevation="1">
+            <h3>[[title]], [[humanTimestamp]]</h3>
+            <div style="white-space: pre-wrap" id="formatedArticle"></div>
+        </paper-material>
+    </template>
+    <script src="../../../../scripts/moments.js"></script>
+    <script src="../../../../scripts/xbbcode.js"></script>
+    <script>
+        Polymer({
+
+            is: 'estp-article',
+            attached: function() {
+                this.fire('articleReady')
+                console.log('fire!')
+            },
+            properties: {
+
+                article: {
+                    type: String,
+                },
+                computeArticle: {
+                    type: String,
+                    computed: '__computeArticle(article)'
+                },
+                title: {
+                    type: String
+                },
+                timestamp: {
+                    type: String
+                },
+                humanTimestamp: {
+                    type: String,
+                    computed: '__computeTimestamp(timestamp)'
+                }
+            },
+            __computeArticle: function (article) {
+                var result = XBBCODE.process({
+                    text: article,
+                    removeMisalignedTags: false,
+                    addInLineBreaks: false
+                });
+                /* console.error("Errors", result.error);
+                console.dir(result.errorQueue);
+                console.log(result.html); */
+                this.$.formatedArticle.innerHTML = result.html
+
+            },
+
+            __computeTimestamp: function (timestamp) {
+                if (timestamp) {
+                    return moment(timestamp).format("DD.MM.YYYY @ HH:mm")
+                }
+            },
+
+        });
+    </script>
+</dom-module>

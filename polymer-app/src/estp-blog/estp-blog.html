@@ -1,0 +1,86 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<!--Shared elements-->
+<link rel="import" href="../../src/shared-styles/shared-styles.html">
+<link rel="import" href="../../src/shared-styles/xbbcode.html">
+
+<!--Firebase elements-->
+<link rel="import" href="../../bower_components/polymerfire/firebase-query.html">
+
+<!--Estp elements-->
+<link rel="import" href="../../src/estp-blog/components/estp-article/estp-article.html">
+<!--UNUSED DIRECTLY-->
+<!--
+`estp-blog`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="estp-blog">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+
+        </style>
+        <style include="shared-styles"></style>
+        <firebase-query path="/blog" data="{{blogData}}"></firebase-query>
+        <h2>Корпоративный блог</h2>
+        <template is="dom-repeat" items="{{blogData}}" as="note" sort="blogView">
+            <estp-article article="[[note.article]]" title="[[note.title]]" timestamp="[[note.timestamp]]"></estp-article>
+        </template>
+    </template>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB8yfv9ZCPQcKkKicYWAHEuOp6KdJVcCak",
+            authDomain: "estp-299e2.firebaseapp.com",
+            databaseURL: "https://estp-299e2.firebaseio.com",
+            storageBucket: "estp-299e2.appspot.com",
+            messagingSenderId: "251141705487"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="../../scripts/moments.js"></script>
+    <script src="../../scripts/xbbcode.js"></script>
+    <script>
+        Polymer({
+
+            is: 'estp-blog',
+            ready: function () {
+                var database = firebase.database();
+
+            },
+            listeners: {
+                'articleReady': '__articleReady',
+            },
+
+            properties: {
+                blogData: {
+                    type: Array,
+                }
+            },
+
+
+
+            __articleReady: function() {
+                console.log('water!')
+            },
+
+            blogView: function(a, b) {
+                if (a.timestamp < b.timestamp) {
+                    return 1
+                }
+                if (a.timestamp === b.timestamp) {
+                    return 0
+                }
+                return -1
+            }
+
+
+
+        });
+    </script>
+</dom-module>

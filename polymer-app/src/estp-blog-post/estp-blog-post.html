@@ -1,0 +1,159 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<!--Shared elements-->
+<link rel="import" href="../../src/shared-styles/shared-styles.html">
+
+<!--Paper elements-->
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/paper-input/paper-textarea.html">
+
+<!--Iron elements-->
+<link rel="import" href="../../bower_components/iron-icons/editor-icons.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../bower_components/iron-icons/communication-icons.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/iron-icons/av-icons.html">
+<!--
+`estp-blog-post-post-post`
+
+
+@demo demo/index.html
+-->
+
+<dom-module id="estp-blog-post">
+    <template>
+        <style>
+            :root {
+                --iron-autogrow-textarea: {
+                    font-family: monospace !important;
+                };
+            }
+
+            :host {
+                display: block;
+            }
+
+            #blogPost {
+                width: 80%;
+            }
+
+            .seporator {
+                margin-top: 50px;
+            }
+        </style>
+        <style include="shared-styles"></style>
+        <h2>Новая статья</h2>
+        <form id="blogPost">
+            <paper-input id="wysTitle" placeholder="Заголовок статьи" value="{{wysTitle}}"></paper-input>
+            <paper-textarea id="wysSubtitle" placeholder="Анотация статьи" value="{{wysSubtitle}}" style="font-family: sans-serif"></paper-textarea>
+            <div class="seporator"></div>
+            <paper-button raised on-tap="__buttonTap" bb="[h4][/h4]">
+                <iron-icon icon="editor:format-size" bb="[h4][/h4]"></iron-icon>
+            </paper-button>
+            <paper-button raised on-tap="__buttonTap" bb="[b][/b]">
+                <iron-icon icon="editor:format-bold" bb="[b][/b]"></iron-icon>
+            </paper-button>
+            <paper-button raised on-tap="__buttonTap" bb="[i][/i]">
+                <iron-icon icon="editor:format-italic" bb="[i][/i]"></iron-icon>
+            </paper-button>
+            <paper-button raised on-tap="__buttonTap" bb="[u][/u]">
+                <iron-icon icon="editor:format-underlined" bb="[u][/u]"></iron-icon>
+            </paper-button>
+            <paper-button raised on-tap="__buttonTap" bb="[blockquote][/blockquote]">
+                <iron-icon icon="communication:chat" bb="[blockquote][/blockquote]"></iron-icon>
+            </paper-button>
+            <paper-button raised on-tap="__urlTap">
+                <iron-icon icon="link"></iron-icon>
+            </paper-button>
+            <paper-button raised on-tap="__photoTap">
+                <iron-icon icon="editor:insert-photo"></iron-icon>
+            </paper-button>
+            <paper-button raised on-tap="__videoTap">
+                <iron-icon icon="av:movie"></iron-icon>
+            </paper-button>
+            <paper-textarea id="wysInput" value="{{wysBlog}}"></paper-textarea>
+            <paper-button disabled$="[[!disabled]]" on-tap="__submitForm">Отправить</paper-button>
+        </form>
+        <br>
+        <br>
+        <div style="white-space: pre-wrap">{{wysBlog}}</div>
+    </template>
+    <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB8yfv9ZCPQcKkKicYWAHEuOp6KdJVcCak",
+            authDomain: "estp-299e2.firebaseapp.com",
+            databaseURL: "https://estp-299e2.firebaseio.com",
+            storageBucket: "estp-299e2.appspot.com",
+            messagingSenderId: "251141705487"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        Polymer({
+
+            is: 'estp-blog-post',
+            ready: function () {
+                var database = firebase.database();
+            },
+            properties: {
+                prop1: {
+                    type: String,
+                    value: 'estp-blog-post'
+                },
+                wysBlog: {
+                    type: String,
+                    value: ""
+                },
+                wysTitle: {
+                    type: String,
+                    value: ""
+                },
+                disabled: {
+                    type: Boolean,
+                    computed: '__enableSubmit(wysTitle, wysBlog)',
+                    notify: true
+                }
+            },
+
+            __enableSubmit: function (title, blog) {
+                if (((title) && (title !== "")) && ((blog) && (blog !== ""))) {
+                    return true
+                } else {
+                    return false
+                }
+            },
+            __submitForm: function (e) {
+                e.preventDefault()
+                var t = new Date().getTime();
+                firebase.database().ref('blog').push({
+                    title: this.$.wysTitle.value,
+                    subtitle: this.$.wysSubtitle.value,
+                    article: this.$.wysInput.value,
+                    timestamp: t
+                });
+                this.$.blogPost.reset()
+            },
+
+            __buttonTap: function (e, t) {
+                this.wysBlog = this.$.wysInput.value + e.target.getAttribute('bb')
+            },
+            __urlTap: function () {
+                var url = prompt('Введите url ссылки', 'http://')
+                var name = prompt('Введите название для ссылки', 'ссылка')
+                this.wysBlog = this.$.wysInput.value + '[url ' + url + ']' + name + '[/url]'
+            },
+            __photoTap: function () {
+                console.log('nothing here yet')
+            },
+            __videoTap: function() {
+                var url = prompt('Введите url видео', 'http://')
+                this.wysBlog = this.$.wysInput.value + '[youtube ' + url + ']' + name + '[/youtube]'
+                console.log('nothing here yet')
+            }
+
+        });
+    </script>
+</dom-module>
