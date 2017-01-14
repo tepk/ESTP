@@ -135,8 +135,9 @@
                 <estp-visit name="visit"></estp-visit>
             </iron-pages>
         </estp-pages>
+        <span class="copyright">© 2014–[[copyright]], Единая Служба Технической Поддержки</span>
         <!-- Yandex.Metrika informer -->
-        <span class="copyright"><a href="https://metrika.yandex.ru/stat/?id=27397583&amp;from=informer"
+        <span class="copyright" hidden$="[[!queryMatches]]"><a href="https://metrika.yandex.ru/stat/?id=27397583&amp;from=informer"
            target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/27397583/1_0_FFFFFFFF_EFEFEFFF_0_visits"
                                                style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (визиты)" /></a></span>
         <!-- /Yandex.Metrika informer -->
@@ -144,6 +145,10 @@
         <!-- Yandex.Metrika counter -->
         <script type="text/javascript">
             (function (d, w, c) {
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+
                 (w[c] = w[c] || []).push(function() {
                     try {
                         w.yaCounter27397583 = new Ya.Metrika({
@@ -155,22 +160,17 @@
                         });
                     } catch(e) { }
                 });
-
                 var n = d.getElementsByTagName("script")[0],
                         s = d.createElement("script"),
                         f = function () { n.parentNode.insertBefore(s, n); };
                 s.type = "text/javascript";
                 s.async = true;
-                s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-                if (w.opera == "[object Opera]") {
-                    d.addEventListener("DOMContentLoaded", f, false);
-                } else { f(); }
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
             })(document, window, "yandex_metrika_callbacks");
         </script>
         <noscript><div><img src="https://mc.yandex.ru/watch/27397583" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         <!-- /Yandex.Metrika counter -->
-        <span class="copyright">© 2014–[[copyright]], Единая Служба Технической Поддержки</span>
         <app-drawer id="drawer" on-tap="__drawerToggle">
             <div id="mobileMenu">
                 <estp-mobile-logo></estp-mobile-logo>
