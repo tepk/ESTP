@@ -125,7 +125,7 @@ var XBBCODE = (function () {
 
         "h4": {
             openTag: function (params, content) {
-                return '<h4>';
+                return '<h4 style="font-weight: normal; color: #0b668b; margin-left: 10px;">';
             },
             closeTag: function (params, content) {
                 return '</h4>';
@@ -226,7 +226,9 @@ var XBBCODE = (function () {
             openTag: function (params, content) {
 
                 var myUrl;
-
+                var hoverStyle = " onMouseOver=this.style.color='#5288ae'";
+                var unhoverStyle = " onMouseOut=this.style.color='#0b668b'";
+                var totalStyle = hoverStyle + unhoverStyle;
                 if (!params) {
                     myUrl = content.replace(/<.*?>/g, "");
                 } else {
@@ -238,7 +240,7 @@ var XBBCODE = (function () {
                     myUrl = "#";
                 }
 
-                return '<a href="' + myUrl + '">';
+                return '<a href="' + myUrl + '" style="color: color: #0b668b; text-decoration: underline;"' + totalStyle + '>';
             },
             closeTag: function (params, content) {
                 return '</a>';

@@ -2,13 +2,18 @@
 
 <!--Shared elements-->
 <link rel="import" href="../../src/shared-styles/shared-styles.html">
-<link rel="import" href="../../src/shared-styles/xbbcode.html">
 
 <!--Firebase elements-->
 <link rel="import" href="../../bower_components/polymerfire/firebase-query.html">
 
+<!--Paper elements-->
+<link rel="import" href="../../bower_components/paper-spinner/paper-spinner-lite.html">
+
 <!--Estp elements-->
 <link rel="import" href="../../src/estp-blog/components/estp-article/estp-article.html">
+
+<!--UNUSED DIRECTLY-->
+<link rel="import" href="../../src/shared-styles/xbbcode.html">
 <!--UNUSED DIRECTLY-->
 <!--
 `estp-blog`
@@ -22,12 +27,21 @@
         <style>
             :host {
                 display: block;
+                position: relative;
+                min-height: 400px;
+            }
+            paper-spinner-lite.thin {
+                --paper-spinner-stroke-width: 1px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
             }
 
         </style>
         <style include="shared-styles"></style>
         <firebase-query path="/blog" data="{{blogData}}"></firebase-query>
         <h2>Корпоративный блог</h2>
+        <paper-spinner-lite class="thin" active></paper-spinner-lite>
         <template is="dom-repeat" items="{{blogData}}" as="note" sort="blogView">
             <estp-article article="[[note.article]]" title="[[note.title]]" timestamp="[[note.timestamp]]"></estp-article>
         </template>
@@ -59,13 +73,14 @@
 
             properties: {
                 blogData: {
-                    type: Array,
+                    type: Array
                 }
             },
 
 
 
             __articleReady: function() {
+
                 console.log('water!')
             },
 
