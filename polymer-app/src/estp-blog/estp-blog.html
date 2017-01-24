@@ -42,9 +42,10 @@
         <firebase-query path="/blog" data="{{blogData}}"></firebase-query>
         <h2>Корпоративный блог</h2>
         <paper-spinner-lite class="thin" active></paper-spinner-lite>
-        <template is="dom-repeat" items="{{blogData}}" as="note" sort="blogView">
+        <template is="dom-repeat" items="{{blogData}}" initial-count="2" as="note" sort="blogView">
             <estp-article article="[[note.article]]" title="[[note.title]]" timestamp="[[note.timestamp]]"></estp-article>
         </template>
+
     </template>
     <script>
         // Initialize Firebase
