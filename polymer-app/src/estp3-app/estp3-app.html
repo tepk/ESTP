@@ -28,14 +28,15 @@
 <link rel="import" href="../../src/estp-contacts/estp-contacts.html">
 <link rel="import" href="../../src/estp-specof/estp-specof.html">
 <link rel="import" href="../../src/estp-mobile-logo/estp-mobile-logo.html">
-<link rel="import" href="../../src/estp-404/estp-404.html">
 <link rel="import" href="../../src/estp-blog-post/estp-blog-post.html">
 <link rel="import" href="../../src/estp-blog/estp-blog.html">
-<link rel="import" href="../../src/estp-visit/estp-visit.html">
+<link rel="import" href="../../src/estp-404/estp-404.html">
 
 <!--UNUSED DIRECTLY-->
+<link rel="import" href="../../src/estp-visit/estp-visit.html">
 <link rel="import" href="../../bower_components/paper-menu/paper-menu.html">
 <link rel="import" href="../../src/behaviours/lazy-pages-behaviour.html">
+<!--UNUSED DIRECTLY-->
 <!--UNUSED DIRECTLY-->
 <!--UNUSED DIRECTLY-->
 <!--UNUSED DIRECTLY-->
@@ -131,13 +132,12 @@
                 <estp-mobile-logo name="mobile-logo"></estp-mobile-logo>
                 <estp-blog-post name="blog-post"></estp-blog-post>
                 <estp-blog name="blog"></estp-blog>
+                <estp-404 name="404"></estp-404>
             </iron-pages>
         </estp-pages>
         <span class="copyright">© 2014–[[copyright]], Единая Служба Технической Поддержки</span>
         <!-- Yandex.Metrika informer -->
-        <span class="copyright" hidden$="[[!queryMatches]]"><a href="https://metrika.yandex.ru/stat/?id=27397583&amp;from=informer"
-           target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/27397583/1_0_FFFFFFFF_EFEFEFFF_0_visits"
-                                               style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (визиты)" /></a></span>
+        <span class="copyright" hidden$="[[!queryMatches]]"><a href="https://metrika.yandex.ru/stat/?id=27397583&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/27397583/1_0_FFFFFFFF_EFEFEFFF_0_visits" style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (визиты)"></a></span>
         <!-- /Yandex.Metrika informer -->
 
         <!-- Yandex.Metrika counter -->
@@ -183,9 +183,9 @@
             is: 'estp3-app',
             ready: function (e, d) {
                 this.$.logo.animate()
-                var titleObject = {'organization': 'Для юридических лиц', 'person': 'Для физических лиц'}
 
             },
+
             behaviors: [
                 EstpBehaviors.LazyPagesBehavior
             ],
@@ -243,7 +243,6 @@
             },
 
             __onScrimTap: function(e) {
-                console.log(e)
                 if ((e.target) && (e.target.id === 'scrim')) {
                     this.$.drawer.toggle();
                 }
