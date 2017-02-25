@@ -2,11 +2,24 @@
   "entrypoint": "index.html",
   "shell": "src/estp3-app/estp3-app.html",
   "fragments": [
-
+    "src/estp-logo/estp-logo.html",
+    "src/estp-pages/estp-pages.html",
+    "src/estp-home/estp-home.html",
+    "src/estp-organization/estp-organization.html",
+    "src/estp-person/estp-person.html",
+    "src/estp-price/estp-price.html",
+    "src/estp-service/estp-service.html",
+    "src/estp-abyss/estp-abyss.html",
+    "src/estp-contacts/estp-contacts.html",
+    "src/estp-specof/estp-specof.html",
+    "src/estp-mobile-logo/estp-mobile-logo.html",
+    "src/estp-blog-post/estp-blog-post.html",
+    "src/estp-blog/estp-blog.html",
+    "src/estp-404/estp-404.html"
   ],
   "sourceGlobs": [
-    "img/**/*",
-    "libs/**/*",
+    "i*",
+    "li*",
     "bower.json"
   ],
   "includeDependencies": [
