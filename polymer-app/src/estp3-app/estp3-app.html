@@ -18,29 +18,14 @@
 <link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
 
 <!--Estp elements-->
-<link rel="import" href="../../src/estp-logo/estp-logo.html">
 <link rel="import" href="../../src/estp-pages/estp-pages.html">
-<link rel="import" href="../../src/estp-organization/estp-organization.html">
-<link rel="import" href="../../src/estp-person/estp-person.html">
-<link rel="import" href="../../src/estp-price/estp-price.html">
-<link rel="import" href="../../src/estp-service/estp-service.html">
-<link rel="import" href="../../src/estp-abyss/estp-abyss.html">
-<link rel="import" href="../../src/estp-contacts/estp-contacts.html">
-<link rel="import" href="../../src/estp-specof/estp-specof.html">
-<link rel="import" href="../../src/estp-mobile-logo/estp-mobile-logo.html">
-<link rel="import" href="../../src/estp-blog-post/estp-blog-post.html">
 <link rel="import" href="../../src/estp-blog/estp-blog.html">
-<link rel="import" href="../../src/estp-404/estp-404.html">
+<link rel="import" href="../../src/estp-organization/estp-organization.html">
 
-<!--UNUSED DIRECTLY-->
-<link rel="import" href="../../src/estp-visit/estp-visit.html">
-<link rel="import" href="../../bower_components/paper-menu/paper-menu.html">
-<link rel="import" href="../../src/behaviours/lazy-pages-behaviour.html">
-<!--UNUSED DIRECTLY-->
-<!--UNUSED DIRECTLY-->
-<!--UNUSED DIRECTLY-->
-<!--UNUSED DIRECTLY-->
-<!--UNUSED DIRECTLY-->
+
+<!--Lazy elements-->
+<link rel="import" href="../behaviors/lazy-pages-behavior.html">
+
 <dom-module id="estp3-app">
     <template>
         <style>
@@ -66,7 +51,6 @@
                     overflow-y: auto;
                 }
             }
-
 
             body {
                 overflow-y: scroll !important;
@@ -100,8 +84,6 @@
             }
 
 
-
-
         </style>
         <style include="shared-styles"></style>
         <app-location route="{{route}}"></app-location>
@@ -112,7 +94,8 @@
 
         <app-header fixed condenses effects="waterfall" hidden$="[[queryMatches]]" class="mobile">
             <app-toolbar>
-                <iron-icon icon="menu" on-tap="__menuTap" style="color: #ffffff; margin-right: 10px; margin-left: -5px;"></iron-icon>
+                <iron-icon icon="menu" on-tap="__menuTap"
+                           style="color: #ffffff; margin-right: 10px; margin-left: -5px;"></iron-icon>
                 <h2>[[currentPage]]</h2>
             </app-toolbar>
         </app-header>
@@ -121,7 +104,8 @@
         <estp-pages id="pages">
             <h1 hidden$="[[!queryMatches]]">Единая Служба Технической Поддержки</h1>
             <h2 hidden$="[[!queryMatches]]">[[currentPage]]</h2>
-            <iron-pages selected="{{routeData.page}}" attr-for-selected="name" fallback-selection="organization">
+            <iron-pages selected="[[page]]" attr-for-selected="name" selected-attribute="visible">
+                <estp-home name="home"></estp-home>
                 <estp-organization name="organization"></estp-organization>
                 <estp-person name="person"></estp-person>
                 <estp-price name="price"></estp-price>
@@ -137,7 +121,11 @@
         </estp-pages>
         <span class="copyright">© 2014–[[copyright]], Единая Служба Технической Поддержки</span>
         <!-- Yandex.Metrika informer -->
-        <span class="copyright" hidden$="[[!queryMatches]]"><a href="https://metrika.yandex.ru/stat/?id=27397583&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/27397583/1_0_FFFFFFFF_EFEFEFFF_0_visits" style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (визиты)"></a></span>
+        <span class="copyright" hidden$="[[!queryMatches]]"><a
+                href="https://metrika.yandex.ru/stat/?id=27397583&from=informer" target="_blank" rel="nofollow"><img
+                src="https://informer.yandex.ru/informer/27397583/1_0_FFFFFFFF_EFEFEFFF_0_visits"
+                style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика"
+                title="Яндекс.Метрика: данные за сегодня (визиты)"></a></span>
         <!-- /Yandex.Metrika informer -->
 
         <!-- Yandex.Metrika counter -->
@@ -145,29 +133,36 @@
             (function (d, w, c) {
                 if (w.opera == "[object Opera]") {
                     d.addEventListener("DOMContentLoaded", f, false);
-                } else { f(); }
+                } else {
+                    f();
+                }
 
-                (w[c] = w[c] || []).push(function() {
+                (w[c] = w[c] || []).push(function () {
                     try {
                         w.yaCounter27397583 = new Ya.Metrika({
-                            id:27397583,
-                            clickmap:true,
-                            trackLinks:true,
-                            accurateTrackBounce:true,
-                            webvisor:true
+                            id: 27397583,
+                            clickmap: true,
+                            trackLinks: true,
+                            accurateTrackBounce: true,
+                            webvisor: true
                         });
-                    } catch(e) { }
+                    } catch (e) {
+                    }
                 });
                 var n = d.getElementsByTagName("script")[0],
                         s = d.createElement("script"),
-                        f = function () { n.parentNode.insertBefore(s, n); };
+                        f = function () {
+                            n.parentNode.insertBefore(s, n);
+                        };
                 s.type = "text/javascript";
                 s.async = true;
 
                 s.src = "https://mc.yandex.ru/metrika/watch.js";
             })(document, window, "yandex_metrika_callbacks");
         </script>
-        <noscript><div><img src="https://mc.yandex.ru/watch/27397583" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/27397583" style="position:absolute; left:-9999px;" alt=""/></div>
+        </noscript>
         <!-- /Yandex.Metrika counter -->
         <app-drawer id="drawer" on-tap="__drawerToggle">
             <div id="mobileMenu">
@@ -182,7 +177,15 @@
 
             is: 'estp3-app',
             ready: function (e, d) {
-                this.$.logo.animate()
+                if (this.queryMatches) {
+                    console.log(this.queryMatches)
+                    this.importHref('../../src/estp-logo/estp-logo.html', function() {
+                        console.log('1')
+                        this.$.logo.animate()
+                        return
+                    })
+
+                }
 
             },
 
@@ -215,8 +218,22 @@
 
             },
             observers: [
-                '__currentResolution(queryMatches)'
+                '__currentResolution(queryMatches)',
             ],
+            __resolvePages: function () {
+                return {
+                    "organization": '../../src/estp-organization/estp-organization.html',
+                    "person": '../../src/estp-person/estp-person.html',
+                    "price": '../../src/estp-price/estp-price.html',
+                    "service": '../../src/estp-service/estp-service.html',
+                    "special-offer": '../../src/estp-specof/estp-specof.html',
+                    "abyss": '../../src/estp-abyss/estp-abyss.html',
+                    "contacts": '../../src/estp-contacts/estp-contacts.html',
+                    "blog": '../../src/estp-blog/estp-blog.html',
+                    "blog-post": '../../src/estp-blog-post/estp-blog-post.html',
+
+                }
+            },
             __routePageChanged: function (name) {
                 var titleObject = {
                     organization: 'Для юридических лиц',
@@ -234,20 +251,21 @@
                 this.$.drawer.toggle();
             },
 
-            __drawerToggle: function(){
+            __drawerToggle: function () {
                 this.$.drawer.toggle();
 
             },
-            __closeDrawer: function() {
+            __closeDrawer: function () {
                 this.$.drawer.toggle();
             },
 
-            __onScrimTap: function(e) {
+            __onScrimTap: function (e) {
                 if ((e.target) && (e.target.id === 'scrim')) {
                     this.$.drawer.toggle();
                 }
 
             },
+
 
             __currentResolution: function (query) {
                 if (!query) {

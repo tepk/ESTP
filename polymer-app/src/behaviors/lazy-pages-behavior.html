@@ -1,0 +1,52 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<script>
+    window.EstpBehaviors = window.EstpBehaviors || {};
+    var EstpBehaviors = window.EstpBehaviors;
+    EstpBehaviors.LazyPagesBehavior = {
+
+        properties: {
+            page: {
+                type: String,
+                reflectToAttribute: true,
+                observer: '__pageChanged'
+            },
+            route: {
+                type: String
+            },
+
+        },
+
+        observers: [
+            '__routeChanged(routeData.page)'
+        ],
+
+        __pageChanged: function (page, oldPage) {
+            if (page != null) {
+
+                var pages = this.__resolvePages ? this.__resolvePages() : {};
+
+                var resolvedUrl = pages[page];
+
+
+                if (resolvedUrl && !this.__isLoaded(page)) {
+                        this.importHref(
+                            this.resolveUrl(resolvedUrl),
+                            function () {
+                                this.__setLoaded(page);
+                            }, null, true);
+                }
+            }
+        },
+        __isLoaded: function (page) {
+            return this.__loadedPages && this.__loadedPages[page];
+        },
+        __setLoaded: function (page) {
+            this.__loadedPages = this.__loadedPages || {};
+            this.__loadedPages[page] = true;
+        },
+        __routeChanged: function (page) {
+            console.log(page)
+            this.page = page || 'organization';
+        }
+    };
+</script>

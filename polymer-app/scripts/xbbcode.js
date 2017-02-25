@@ -150,7 +150,7 @@ var XBBCODE = (function () {
                     myUrl = "";
                 }
 
-                return '<img src="' + myUrl + '" />';
+                return '<br /><img src="' + myUrl + '" style="width: 500px"/><br />';
             },
             closeTag: function (params, content) {
                 return '';
