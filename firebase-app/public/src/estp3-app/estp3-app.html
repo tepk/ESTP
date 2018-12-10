@@ -1,0 +1,246 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<!--Shared elements-->
+<link rel="import" href="../../src/shared-styles/shared-styles.html">
+
+<!--App elements-->
+<link rel="import" href="../../bower_components/app-route/app-location.html">
+<link rel="import" href="../../bower_components/app-route/app-route.html">
+<link rel="import" href="../../bower_components/app-layout/app-scroll-effects/effects/waterfall.html">
+<link rel="import" href="../../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
+
+<!--Iron elements-->
+<link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
+
+<!--Estp elements-->
+<link rel="import" href="../../src/estp-logo/estp-logo.html">
+<link rel="import" href="../../src/estp-pages/estp-pages.html">
+<link rel="import" href="../../src/estp-organization/estp-organization.html">
+<link rel="import" href="../../src/estp-person/estp-person.html">
+<link rel="import" href="../../src/estp-price/estp-price.html">
+<link rel="import" href="../../src/estp-service/estp-service.html">
+<link rel="import" href="../../src/estp-abyss/estp-abyss.html">
+<link rel="import" href="../../src/estp-contacts/estp-contacts.html">
+<link rel="import" href="../../src/estp-specof/estp-specof.html">
+<link rel="import" href="../../src/estp-mobile-logo/estp-mobile-logo.html">
+<link rel="import" href="../../src/estp-404/estp-404.html">
+
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
+<dom-module id="estp3-app">
+    <template>
+        <style>
+            :host {
+
+                --orientatinon-padding: 73px;
+                --text-padding: 25px;
+                --font-size: 1em;
+                --card-padding: 30px 20px 40px 30px;
+                --price-margin: 20px;
+                --price-width: 140px;
+                font-size: var(--font-size);
+                display: block;
+                width: 100%;
+                position: relative;
+                padding-left: var(--orientatinon-padding);
+                box-sizing: border-box;
+
+            }
+
+            app-drawer {
+                --app-drawer-content-container: {
+                    overflow-y: auto;
+                }
+            }
+
+
+            body {
+                overflow-y: scroll !important;
+
+            }
+
+            .copyright {
+                display: block;
+                font-size: 0.8em;
+                padding-top: 15px;
+                width: 100%;
+                text-align: center;
+                color: #5288ae;
+            }
+
+            .mobile {
+                background-color: #5288ae;
+                margin: 0;
+                padding: 0;
+
+            }
+
+            .mobile h2 {
+                color: #ffffff;
+                font-size: 0.9em;
+
+            }
+
+            #mobileMenu ul {
+                padding-top: 60px;
+            }
+
+
+
+
+        </style>
+        <style include="shared-styles"></style>
+        <app-location route="{{route}}"></app-location>
+        <app-route route="{{route}}" pattern="/:page" data="{{routeData}}" tail="{{tail}}">
+        </app-route>
+        <iron-media-query query="[[minWidth]]" query-matches="{{queryMatches}}"></iron-media-query>
+        <estp-logo id="logo" hidden$="[[!queryMatches]]"></estp-logo>
+
+        <app-header fixed="" condenses="" effects="waterfall" hidden$="[[queryMatches]]" class="mobile">
+            <app-toolbar>
+                <iron-icon icon="menu" on-tap="__menuTap" style="color: #ffffff; margin-right: 10px; margin-left: -5px;"></iron-icon>
+                <h2>[[currentPage]]</h2>
+            </app-toolbar>
+        </app-header>
+
+
+        <estp-pages id="pages">
+            <h1 hidden$="[[!queryMatches]]">Единая Служба Технической Поддержки</h1>
+            <h2 hidden$="[[!queryMatches]]">[[currentPage]]</h2>
+            <iron-pages selected="{{routeData.page}}" attr-for-selected="name" fallback-selection="organization">
+                <estp-organization name="organization"></estp-organization>
+                <estp-person name="person"></estp-person>
+                <estp-price name="price"></estp-price>
+                <estp-service name="service"></estp-service>
+                <estp-abyss name="abyss"></estp-abyss>
+                <estp-contacts name="contacts"></estp-contacts>
+                <estp-specof name="special-offer"></estp-specof>
+                <estp-mobile-logo name="mobile-logo"></estp-mobile-logo>
+                <estp-blog-post name="blog-post"></estp-blog-post>
+                <estp-blog name="blog"></estp-blog>
+                <estp-404 name="404"></estp-404>
+            </iron-pages>
+        </estp-pages>
+        <span class="copyright">© 2014–[[copyright]], Единая Служба Технической Поддержки</span>
+        <!-- Yandex.Metrika informer -->
+        <span class="copyright" hidden$="[[!queryMatches]]"><a href="https://metrika.yandex.ru/stat/?id=27397583&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/27397583/1_0_FFFFFFFF_EFEFEFFF_0_visits" style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (визиты)"></a></span>
+        <!-- /Yandex.Metrika informer -->
+
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter27397583 = new Ya.Metrika({
+                            id:27397583,
+                            clickmap:true,
+                            trackLinks:true,
+                            accurateTrackBounce:true,
+                            webvisor:true
+                        });
+                    } catch(e) { }
+                });
+                var n = d.getElementsByTagName("script")[0],
+                        s = d.createElement("script"),
+                        f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/27397583" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+        <app-drawer id="drawer" on-tap="__drawerToggle">
+            <div id="mobileMenu">
+                <estp-mobile-logo></estp-mobile-logo>
+
+            </div>
+        </app-drawer>
+    </template>
+
+    <script>Polymer({
+  is: 'estp3-app',
+  ready: function (e, d) {
+    this.$.logo.animate();
+  },
+  listeners: {
+    'tap': '__onScrimTap',
+    'closeDrawer': '__closeDrawer'
+  },
+  properties: {
+    copyright: {
+      type: Date,
+      value: function () {
+        return new Date().getFullYear();
+      }
+    },
+    minWidth: {
+      type: String,
+      value: "(min-width: 601px)"
+    },
+    queryMatches: {
+      type: Boolean
+    },
+    currentPage: {
+      type: String,
+      computed: '__routePageChanged(routeData.page)'
+    }
+  },
+  observers: ['__currentResolution(queryMatches)'],
+  __routePageChanged: function (name) {
+    var titleObject = {
+      organization: 'Для юридических лиц',
+      person: 'Для физических лиц',
+      price: 'Стоимость услуг',
+      service: 'Сервисный центр',
+      abyss: 'Вопросы и ответы',
+      contacts: 'Контактная информация',
+      'special-offer': 'Специальные предложения'
+    };
+    return titleObject[name];
+  },
+  __menuTap: function (e, t) {
+    this.$.drawer.toggle();
+  },
+  __drawerToggle: function () {
+    this.$.drawer.toggle();
+  },
+  __closeDrawer: function () {
+    this.$.drawer.toggle();
+  },
+  __onScrimTap: function (e) {
+    if (e.target && e.target.id === 'scrim') {
+      this.$.drawer.toggle();
+    }
+  },
+  __currentResolution: function (query) {
+    if (!query) {
+      this.customStyle['--orientatinon-padding'] = '0', this.customStyle['--text-padding'] = '5px', this.customStyle['--font-size'] = '0.85em';
+      this.customStyle['--card-padding'] = '15px 10px 20px 15px';
+      this.customStyle['--price-margin'] = '0';
+      this.customStyle['--price-width'] = '90px';
+      this.updateStyles();
+    } else {
+      this.customStyle['--orientatinon-padding'] = '73px', this.customStyle['--text-padding'] = '25px', this.customStyle['--font-size'] = '1em';
+      this.customStyle['--card-padding'] = '30px 20px 40px 30px';
+      this.customStyle['--price-margin'] = '30px';
+      this.customStyle['--price-width'] = '140px';
+      this.updateStyles();
+    }
+  }
+});</script>
+</dom-module>

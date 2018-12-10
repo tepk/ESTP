@@ -1,0 +1,43 @@
+<link rel="import" href="../../src/shared-styles/shared-styles.html">
+
+<!--
+`estp-person`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="estp-person">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <style include="shared-styles"></style>
+        <p>Мы&nbsp;предоставляем техническую поддержку, вне зависимости от&nbsp;провайдера интернет или кабельного
+            телевидения, при необходимости, все общение с&nbsp;провайдером тоже берем на&nbsp;себя.</p>
+        <p>Инженеры работают с&nbsp;8:00 до&nbsp;20:00.</p>
+        <p>Бесплатный выезд возможен в
+        </p><ul>
+            <li>Советский район (Верхняя зона, микрорайон Щ, Нижняя Ельцовка, Шлюз, ОбьГЭС);</li>
+            <li>Бердск, Кольцово, Краснообск.</li>
+        </ul>
+        <p></p>
+        <p>По&nbsp;другим районам&nbsp;Новосибирска и&nbsp;области стоимость вызова согласовывается с&nbsp;диспетчером
+            и/или инженером.</p>
+        <p>Мы работаем с&nbsp;операционными системами семейства Microsoft Windows, Mac&nbsp;OS (не&nbsp;ниже
+            10.6). В&nbsp;виде исключения, мы&nbsp;можем попытаться помочь с&nbsp;UNIX-образными системами на&nbsp;усмотрение
+            инженера, но&nbsp;гарантия на&nbsp;такие услуги не&nbsp;распространяется.</p>
+    </template>
+
+    <script>Polymer({
+  is: 'estp-person',
+  properties: {
+    prop1: {
+      type: String,
+      value: 'estp-person'
+    }
+  }
+});</script>
+</dom-module>

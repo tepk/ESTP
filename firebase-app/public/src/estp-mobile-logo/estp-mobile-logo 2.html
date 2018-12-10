@@ -1,0 +1,176 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<!--Paper elements-->
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+
+<!--UNUSED DIRECTLY-->
+<link rel="import" href="../../bower_components/paper-fab/paper-fab.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../bower_components/iron-icons/image-icons.html">
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
+<!--UNUSED DIRECTLY-->
+<!--
+`estp-mobile-logo`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="estp-mobile-logo">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+            a {
+                color: #000000;
+                text-decoration: none;
+
+            }
+
+            iron-icon {
+                --iron-icon-width:	16px;
+                --iron-icon-height: 16px;
+            }
+            paper-card {
+
+                display: table;
+                text-align: center;
+                overflow: hidden;
+                font-family: sans-serif;
+                background-color: #0b97c4;
+            }
+
+            #pc1 {
+                position: absolute;
+                top: 3px;
+                left: 110px;
+                width: 17px;
+                height: 17px;
+            }
+
+            #pc2 {
+                position: absolute;
+                top: 3px;
+                left: 128px;
+                width: 17px;
+                height: 17px;
+            }
+
+            #pc3 {
+                position: absolute;
+                top: 21px;
+                left: 110px;
+                width: 17px;
+                height: 17px;
+            }
+
+            #pc4 {
+                position: absolute;
+                top: 21px;
+                left: 128px;
+                width: 17px;
+                height: 17px;
+            }
+
+            #letter1, #letter2, #letter3, #letter4 {
+                font-weight: normal;
+            }
+
+            #specOff {
+                background-color: #FF4792;
+            }
+
+            span.letters {
+                display: table-cell;
+                vertical-align: middle;
+                color: #ffffff;
+                font-size: 0.7rem;
+            }
+            paper-menu {
+                padding-top: 64px;
+            }
+            paper-menu div {
+                width: 100%;
+                height: 36px;
+                vertical-align: middle;
+                line-height: 36px;
+                margin-top: 3px;
+                margin-bottom: 3px;
+            }
+
+            .icons {
+                width: 34px;
+                margin-left: 3px;
+                color: #ffffff;
+                float: left;
+                margin-right: 3px;
+            }
+
+
+        </style>
+        <app-location route="{{route}}"></app-location>
+        <app-route route="{{route}}" pattern="/:page" data="{{routeData}}" tail="{{tail}}">
+        </app-route>
+        <div style="position: relative;">
+            <paper-card id="pc1"><span id="letter1" class="letters">Е</span></paper-card>
+            <paper-card id="pc2"><span id="letter2" class="letters">С</span></paper-card>
+            <paper-card id="pc3"><span id="letter3" class="letters">Т</span></paper-card>
+            <paper-card id="pc4"><span id="letter4" class="letters">П</span></paper-card>
+        </div>
+        <paper-menu>
+            <div>
+                <a href="[[__computeHref(routeData.page,'organization')]]" on-tap="__closeDrawer">
+                    <paper-card class="icons"><iron-icon icon="social:group"></iron-icon></paper-card>Для юридических лиц
+                </a>
+            </div>
+            <div>
+                <a href="[[__computeHref(routeData.page,'person')]]" on-tap="__closeDrawer">
+                <paper-card class="icons"><iron-icon icon="social:person"></iron-icon></paper-card>Для физических лиц
+                </a>
+            </div>
+            <div>
+                <a href="[[__computeHref(routeData.page,'price')]]" on-tap="__closeDrawer">
+                <paper-card class="icons"><iron-icon icon="editor:insert-drive-file"></iron-icon></paper-card>Стоимость услуг
+                </a>
+            </div>
+            <div>
+                <a href="[[__computeHref(routeData.page,'service')]]" on-tap="__closeDrawer">
+                <paper-card class="icons"><iron-icon icon="settings"></iron-icon></paper-card>Сервисный центр
+                </a>
+            </div>
+            <div>
+                <a href="[[__computeHref(routeData.page,'abyss')]]" on-tap="__closeDrawer">
+                <paper-card class="icons"><iron-icon icon="help-outline"></iron-icon></paper-card>Вопросы и ответы
+                </a>
+            </div>
+            <div>
+                <a href="[[__computeHref(routeData.page,'contacts')]]" on-tap="__closeDrawer">
+                <paper-card class="icons"><iron-icon icon="communication:call"></iron-icon></paper-card>Контактная информация
+                </a>
+            </div>
+            <div>
+                <a href="[[__computeHref(routeData.page,'special-offer')]]" on-tap="__closeDrawer">
+                <paper-card class="icons" id="specOff"><span>%</span></paper-card>Специальные предложения
+                </a>
+            </div>
+        </paper-menu>
+    </template>
+
+    <script>Polymer({
+  is: 'estp-mobile-logo',
+  __computeHref: function (page, uri) {
+    if (page === uri) {
+      return '';
+    } else {
+      return '/' + uri;
+    }
+  },
+  __closeDrawer: function () {
+    this.fire('closeDrawer');
+  }
+});</script>
+</dom-module>

@@ -1,0 +1,52 @@
+<link rel="import" href="../../src/shared-styles/shared-styles.html">
+
+
+<!--
+`estp-specof`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="estp-specof">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+
+            .gray {
+                color: rgba(0, 0, 0, 0.6)
+            }
+
+            .highlited {
+                color: rgba(255, 71, 146, 1);
+            }
+        </style>
+        <style include="shared-styles"></style>
+
+        <h2>Архив предложений</h2>
+        <h3 class="gray">«Татьянин день»</h3>
+        <p class="gray">Акция для студентов.<br>Каждая услуга из&nbsp;нашего <a href="/price">прайс-листа</a> стоит ровно 200&nbsp;рублей.</p>
+        <p class="gray"><span class="highlited">Условие</span>: акция распространяется на&nbsp;работы, не&nbsp;предусматривающие расходных материалов, <nobr>действовала с 21.01.2017 по 31.01.2017</nobr> при предъявлении <i>действующей кампусной карты</i>.</p>
+        <h3 class="gray">«Все по&nbsp;200»</h3>
+        <p class="gray">Каждая услуга из&nbsp;нашего <a href="/price">прайс-листа</a> стоит ровно 200&nbsp;рублей.</p>
+        <p class="gray"><span class="highlited">Условие</span>: акция распространяется на&nbsp;работы, не&nbsp;предусматривающие расходных материалов, <nobr>действовала с 15.11.2016 по 20.01.2017</nobr>.</p>
+        <h3 class="gray">«Бюджетная организация»</h3>
+        <p class="gray">Мы&nbsp;согласны обслуживать каждый&nbsp;ПК, внесенный в&nbsp;договор, за&nbsp;200 рублей в&nbsp;месяц.</p>
+        <p class="gray"><span class="highlited">Условие</span>: вы&nbsp;являетесь <i>бюджетной организацией</i>, <nobr>действовала с 20.09.2016 по 31.05.2018</nobr>.</p>
+        <h3 class="gray">«Своими силами»</h3>
+        <p class="gray">Стоимость обслуживания каждого&nbsp;ПК равна 300 рублей в&nbsp;месяц.</p>
+        <p class="gray"><span class="highlited">Условие</span>: вы разрываете, либо не продляете действующий договор обслуживания <i>с вашим провайдером</i>, <nobr>действовала с 20.09.2016 по 31.05.2018</nobr>.</p>
+    </template>
+
+    <script>Polymer({
+  is: 'estp-specof',
+  properties: {
+    prop1: {
+      type: String,
+      value: 'estp-specof'
+    }
+  }
+});</script>
+</dom-module>

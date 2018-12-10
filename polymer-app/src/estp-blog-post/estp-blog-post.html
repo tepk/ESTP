@@ -4,10 +4,9 @@
 <link rel="import" href="../../src/shared-styles/shared-styles.html">
 
 <!--Paper elements-->
-<link rel="import" href="../../bower_components/paper-spinner/paper-spinner-lite.html">
 <link rel="import" href="../../bower_components/paper-input/paper-input.html">
-<link rel="import" href="../../bower_components/paper-input/paper-textarea.html">
 <link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/paper-input/paper-textarea.html">
 
 <!--Iron elements-->
 <link rel="import" href="../../bower_components/iron-icons/editor-icons.html">
@@ -27,7 +26,7 @@
         <style>
             :root {
                 --iron-autogrow-textarea: {
-                    font-family: sans-serif !important;
+                    font-family: monospace !important;
                 };
             }
 
@@ -39,31 +38,11 @@
                 width: 80%;
             }
 
-            #spinnerDiv {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                opacity: 0.9;
-                background-color: #ffffff;
-                z-index: 999999;
-            }
-
-            #spinnerDiv paper-spinner-lite {
-                position: fixed;
-                top: 50%;
-                left: 50%;
-            }
-
             .seporator {
                 margin-top: 50px;
             }
         </style>
         <style include="shared-styles"></style>
-        <div id="spinnerDiv" hidden$="[[!spinner]]">
-            <paper-spinner-lite class="thin" active></paper-spinner-lite>
-        </div>
         <h2>Новая статья</h2>
         <form id="blogPost">
             <paper-input id="wysTitle" placeholder="Заголовок статьи" value="{{wysTitle}}"></paper-input>
@@ -88,7 +67,6 @@
                 <iron-icon icon="link"></iron-icon>
             </paper-button>
             <paper-button raised on-tap="__photoTap">
-                <input type="file" id="uploadImage" style="display: none;" on-change="__inputFile">
                 <iron-icon icon="editor:insert-photo"></iron-icon>
             </paper-button>
             <paper-button raised on-tap="__videoTap">
@@ -97,6 +75,9 @@
             <paper-textarea id="wysInput" value="{{wysBlog}}"></paper-textarea>
             <paper-button disabled$="[[!disabled]]" on-tap="__submitForm">Отправить</paper-button>
         </form>
+        <br>
+        <br>
+        <div style="white-space: pre-wrap">{{wysBlog}}</div>
     </template>
     <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
     <script>
@@ -134,21 +115,7 @@
                     type: Boolean,
                     computed: '__enableSubmit(wysTitle, wysBlog)',
                     notify: true
-                },
-                spinner: {
-                    type: Boolean,
-                    notify: true,
-                    value: false
                 }
-            },
-            listeners: {
-                imageURL: '__pasteImageURL'
-            },
-
-            __pasteImageURL: function(e) {
-                console.log(e.detail.url)
-                this.wysBlog = this.$.wysInput.value + '[img]' + e.detail.url + '[/img]'
-                this.spinner = false
             },
 
             __enableSubmit: function (title, blog) {
@@ -179,47 +146,7 @@
                 this.wysBlog = this.$.wysInput.value + '[url ' + url + ']' + name + '[/url]'
             },
             __photoTap: function () {
-                this.$.uploadImage.click()
-            },
-            __inputFile: function(e) {
-                if (confirm('Вы выбрали файл ' +  e.target.files[0].name + '. Вы уверены что хотите загрузить именно его?')) {
-                    this.spinner = true
-                    var storageRef = firebase.storage().ref();
-                    var self = this
-                    e.preventDefault()
-                    var file = e.target.files[0]
-                    console.log(file)
-                    var imagesRef = storageRef.child('images/' + file.name);
-                    var progress = imagesRef.put(file);
-                    progress.on('state_changed', function(snapshot){
-                        // Observe state change events such as progress, pause, and resume
-                        // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
-                        var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-                        console.log('Upload is ' + progress + '% done');
-                        switch (snapshot.state) {
-                            case firebase.storage.TaskState.PAUSED: // or 'paused'
-                                console.log('Upload is paused');
-                                break;
-                            case firebase.storage.TaskState.RUNNING: // or 'running'
-                                console.log('Upload is running');
-                                break;
-                        }
-                    }, function(error) {
-                        // Handle unsuccessful uploads
-                    }, function() {
-                        // Handle successful uploads on complete
-                        // For instance, get the download URL: https://firebasestorage.googleapis.com/...
-                        var downloadURL = progress.snapshot.downloadURL;
-                        firebase.database().ref('images').push({
-                            blogImg: downloadURL
-                        })
-                        console.log(progress.snapshot.downloadURL)
-                        self.fire('imageURL', {url: progress.snapshot.downloadURL})
-                    })
-                } else {
-                    console.log('cancel this photo')
-                }
-
+                console.log('nothing here yet')
             },
             __videoTap: function() {
                 var url = prompt('Введите url видео', 'http://')
